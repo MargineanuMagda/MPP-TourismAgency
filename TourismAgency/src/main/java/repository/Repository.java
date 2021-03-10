@@ -1,6 +1,7 @@
 package repository;
 
 import domain.Entity;
+import domain.validators.ValidationException;
 
 /**
  * CRUD operations repository interface
@@ -11,9 +12,9 @@ public interface Repository <ID,E extends Entity<ID>>{
 
     E findOne(ID id);
     Iterable<E> findAll();
-    E save(E entity);
-    E delete(ID id);
-    E update(E entity);
+    E save(E entity) throws ValidationException, RepoException;
+    E delete(ID id) throws RepoException;
+    E update(E entity) throws RepoException, ValidationException;
     int size();
 
 }

@@ -1,0 +1,321 @@
+10 Mar 2021 21:48:26,657 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=postgres, agency.jdbc.pass=postgres, Agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism, agency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, Agency.jdbc.user=root, Agency.jdbc.pass=mySQLtest} 
+10 Mar 2021 21:48:26,679 TRACE repository.database.TripDbRepository 33 findOne - Enter finding task with id 13 
+10 Mar 2021 21:48:26,679 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 21:48:26,679 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 21:48:26,679 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentieTurism
+10 Mar 2021 21:48:26,679 INFO  repository.database.JdbcUtils 27 getNewConnection - user: postgres
+10 Mar 2021 21:48:26,679 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: postgres
+10 Mar 2021 21:48:26,679 ERROR repository.database.JdbcUtils 41 getNewConnection - java.sql.SQLException: No suitable driver found for jdbc:postgresql://localhost:5432/agentieTurism
+10 Mar 2021 21:48:26,679 TRACE repository.database.JdbcUtils 57 getConnection - Exit
+10 Mar 2021 21:50:32,254 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 21:50:32,254 TRACE repository.database.TripDbRepository 33 findOne - Enter finding task with id 13 
+10 Mar 2021 21:50:32,254 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 21:50:32,254 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 21:50:32,254 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 21:50:32,254 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 21:50:32,254 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 21:50:32,254 ERROR repository.database.JdbcUtils 41 getNewConnection - java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 21:50:32,254 TRACE repository.database.JdbcUtils 57 getConnection - Exit
+10 Mar 2021 21:59:21,209 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 21:59:21,209 TRACE repository.database.TripDbRepository 33 findOne - Enter finding task with id 13 
+10 Mar 2021 21:59:21,225 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 21:59:21,225 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 21:59:21,225 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 21:59:21,225 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 21:59:21,225 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 21:59:21,379 ERROR repository.database.JdbcUtils 41 getNewConnection - java.sql.SQLException: Unable to load authentication plugin 'caching_sha2_password'.
+10 Mar 2021 21:59:21,379 TRACE repository.database.JdbcUtils 57 getConnection - Exit
+10 Mar 2021 22:00:12,616 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=postgres, aagency.jdbc.pass=mySQLtest, aagency.jdbc.user=root, agency.jdbc.pass=postgres, aagency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism, agency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism} 
+10 Mar 2021 22:00:12,632 TRACE repository.database.TripDbRepository 33 findOne - Enter finding task with id 13 
+10 Mar 2021 22:00:12,632 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:00:12,632 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 22:00:12,632 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentieTurism
+10 Mar 2021 22:00:12,632 INFO  repository.database.JdbcUtils 27 getNewConnection - user: postgres
+10 Mar 2021 22:00:12,632 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: postgres
+10 Mar 2021 22:00:12,848 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1cd629b3)
+10 Mar 2021 22:00:12,864 TRACE repository.database.TripDbRepository 59 findOne - Exit: No task found with id 13
+10 Mar 2021 22:00:12,864 TRACE repository.database.TripDbRepository 101 save - Enter saving trip domain.Trip@797b0699 
+10 Mar 2021 22:00:12,864 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:00:12,864 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1cd629b3)
+10 Mar 2021 22:00:12,864 ERROR repository.database.TripDbRepository 114 save - org.postgresql.util.PSQLException: ERROR: cannot insert into column "idt"
+  Detail: Column "idt" is an identity column defined as GENERATED ALWAYS.
+  Hint: Use OVERRIDING SYSTEM VALUE to override.
+10 Mar 2021 22:00:12,864 TRACE repository.database.TripDbRepository 117 save - Exit
+10 Mar 2021 22:00:12,864 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:00:12,864 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1cd629b3)
+10 Mar 2021 22:00:12,864 TRACE repository.database.TripDbRepository 89 findAll - Exit with([domain.Trip@68034211, domain.Trip@4f74980d])
+10 Mar 2021 22:00:56,320 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=postgres, aagency.jdbc.pass=mySQLtest, aagency.jdbc.user=root, agency.jdbc.pass=postgres, aagency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism, agency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism} 
+10 Mar 2021 22:00:56,320 TRACE repository.database.TripDbRepository 33 findOne - Enter finding task with id 13 
+10 Mar 2021 22:00:56,320 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:00:56,320 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 22:00:56,320 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentieTurism
+10 Mar 2021 22:00:56,320 INFO  repository.database.JdbcUtils 27 getNewConnection - user: postgres
+10 Mar 2021 22:00:56,320 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: postgres
+10 Mar 2021 22:00:56,521 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@895e367)
+10 Mar 2021 22:00:56,536 TRACE repository.database.TripDbRepository 59 findOne - Exit: No task found with id 13
+10 Mar 2021 22:00:56,536 TRACE repository.database.TripDbRepository 101 save - Enter saving trip Trip{place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:00:56.320837300, price=400.0, nrTickets=120, freeTickets=120} 
+10 Mar 2021 22:00:56,536 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:00:56,536 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@895e367)
+10 Mar 2021 22:00:56,558 ERROR repository.database.TripDbRepository 114 save - org.postgresql.util.PSQLException: ERROR: cannot insert into column "idt"
+  Detail: Column "idt" is an identity column defined as GENERATED ALWAYS.
+  Hint: Use OVERRIDING SYSTEM VALUE to override.
+10 Mar 2021 22:00:56,558 TRACE repository.database.TripDbRepository 117 save - Exit
+10 Mar 2021 22:00:56,558 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:00:56,558 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@895e367)
+10 Mar 2021 22:00:56,558 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Paris', transport='BTrans', date=2021-07-10, departureTime=09:00, price=400.0, nrTickets=130, freeTickets=130}, Trip{place='Budapesta', transport='EvoTrans', date=2021-07-12, departureTime=13:00, price=250.0, nrTickets=100, freeTickets=100}])
+10 Mar 2021 22:02:53,740 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=postgres, aagency.jdbc.pass=mySQLtest, aagency.jdbc.user=root, agency.jdbc.pass=postgres, aagency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism, agency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism} 
+10 Mar 2021 22:02:53,756 TRACE repository.database.TripDbRepository 33 findOne - Enter finding task with id 13 
+10 Mar 2021 22:02:53,756 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:02:53,756 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 22:02:53,756 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentieTurism
+10 Mar 2021 22:02:53,756 INFO  repository.database.JdbcUtils 27 getNewConnection - user: postgres
+10 Mar 2021 22:02:53,756 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: postgres
+10 Mar 2021 22:02:53,939 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4dd6fd0a)
+10 Mar 2021 22:02:53,955 TRACE repository.database.TripDbRepository 59 findOne - Exit: No task found with id 13
+10 Mar 2021 22:02:53,970 TRACE repository.database.TripDbRepository 101 save - Enter saving trip Trip{place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:02:53.740616500, price=400.0, nrTickets=120, freeTickets=120} 
+10 Mar 2021 22:02:53,970 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:02:53,970 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4dd6fd0a)
+10 Mar 2021 22:02:53,987 TRACE repository.database.TripDbRepository 117 save - Exit
+10 Mar 2021 22:02:53,987 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:02:53,987 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4dd6fd0a)
+10 Mar 2021 22:02:53,987 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Paris', transport='BTrans', date=2021-07-10, departureTime=09:00, price=400.0, nrTickets=130, freeTickets=130}, Trip{place='Budapesta', transport='EvoTrans', date=2021-07-12, departureTime=13:00, price=250.0, nrTickets=100, freeTickets=100}, Trip{place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:02:53.740617, price=400.0, nrTickets=120, freeTickets=120}])
+10 Mar 2021 22:03:51,452 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=postgres, aagency.jdbc.pass=mySQLtest, aagency.jdbc.user=root, agency.jdbc.pass=postgres, aagency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism, agency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism} 
+10 Mar 2021 22:03:51,468 TRACE repository.database.TripDbRepository 33 findOne - Enter finding task with id 13 
+10 Mar 2021 22:03:51,468 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:03:51,468 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 22:03:51,468 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentieTurism
+10 Mar 2021 22:03:51,468 INFO  repository.database.JdbcUtils 27 getNewConnection - user: postgres
+10 Mar 2021 22:03:51,468 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: postgres
+10 Mar 2021 22:03:51,652 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@895e367)
+10 Mar 2021 22:03:51,668 TRACE repository.database.TripDbRepository 59 findOne - Exit: No task found with id 13
+10 Mar 2021 22:03:51,668 TRACE repository.database.TripDbRepository 101 save - Enter saving trip Trip{place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:03:51.452489900, price=400.0, nrTickets=120, freeTickets=120} 
+10 Mar 2021 22:03:51,668 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:03:51,668 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@895e367)
+10 Mar 2021 22:03:51,668 TRACE repository.database.TripDbRepository 117 save - Exit
+10 Mar 2021 22:03:51,668 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:03:51,668 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@895e367)
+10 Mar 2021 22:03:51,668 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Paris', transport='BTrans', date=2021-07-10, departureTime=09:00, price=400.0, nrTickets=130, freeTickets=130}, Trip{place='Budapesta', transport='EvoTrans', date=2021-07-12, departureTime=13:00, price=250.0, nrTickets=100, freeTickets=100}, Trip{place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:02:53.740617, price=400.0, nrTickets=120, freeTickets=120}, Trip{place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:03:51.452490, price=400.0, nrTickets=120, freeTickets=120}])
+10 Mar 2021 22:05:01,735 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=postgres, aagency.jdbc.pass=mySQLtest, aagency.jdbc.user=root, agency.jdbc.pass=postgres, aagency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism, agency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism} 
+10 Mar 2021 22:05:01,751 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:05:01,751 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 22:05:01,751 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentieTurism
+10 Mar 2021 22:05:01,751 INFO  repository.database.JdbcUtils 27 getNewConnection - user: postgres
+10 Mar 2021 22:05:01,751 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: postgres
+10 Mar 2021 22:05:01,935 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7a3793c7)
+10 Mar 2021 22:05:01,951 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Paris', transport='BTrans', date=2021-07-10, departureTime=09:00, price=400.0, nrTickets=130, freeTickets=130}, Trip{place='Budapesta', transport='EvoTrans', date=2021-07-12, departureTime=13:00, price=250.0, nrTickets=100, freeTickets=100}, Trip{place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:02:53.740617, price=400.0, nrTickets=120, freeTickets=120}, Trip{place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:03:51.452490, price=400.0, nrTickets=120, freeTickets=120}])
+10 Mar 2021 22:05:41,192 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 22:05:41,192 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:05:41,192 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 22:05:41,192 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 22:05:41,192 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 22:05:41,208 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 22:05:41,337 ERROR repository.database.JdbcUtils 41 getNewConnection - java.sql.SQLException: Unable to load authentication plugin 'caching_sha2_password'.
+10 Mar 2021 22:05:41,337 TRACE repository.database.JdbcUtils 57 getConnection - Exit
+10 Mar 2021 22:13:51,179 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 22:13:51,194 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 22:13:51,194 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 22:13:51,194 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 22:13:51,194 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 22:13:51,194 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 22:13:51,510 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@366c4480)
+10 Mar 2021 22:13:51,542 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Sibiu', transport='BTurism', date=2021-05-10, departureTime=12:00, price=200.0, nrTickets=50, freeTickets=50}])
+10 Mar 2021 23:52:46,596 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:52:46,598 INFO  repository.database.AgentDbRepository 25 <init> - Initializing AgentRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:52:46,598 INFO  repository.database.ReservationDbRepository 28 <init> - Initializing ReservationRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:52:46,607 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:52:46,607 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:52:46,607 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:52:46,607 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:52:46,607 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:52:47,037 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@681a8b4e)
+10 Mar 2021 23:52:47,066 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Sibiu', transport='BTurism', date=2021-05-10, departureTime=12:00, price=200.0, nrTickets=50, freeTickets=50}])
+10 Mar 2021 23:52:47,066 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:52:47,066 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:52:47,066 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:52:47,066 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:52:47,066 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:52:47,092 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@3f07b12c)
+10 Mar 2021 23:52:47,100 ERROR repository.database.AgentDbRepository 71 findAll - java.sql.SQLException: Column 'idt' not found.
+10 Mar 2021 23:52:47,100 TRACE repository.database.AgentDbRepository 74 findAll - Exit with([])
+10 Mar 2021 23:52:47,100 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:52:47,100 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:52:47,100 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:52:47,100 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:52:47,100 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:52:47,139 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@f001896)
+10 Mar 2021 23:52:47,139 ERROR repository.database.ReservationDbRepository 78 findAll - java.sql.SQLException: Column 'transport' not found.
+10 Mar 2021 23:52:47,139 TRACE repository.database.ReservationDbRepository 81 findAll - Exit with([])
+10 Mar 2021 23:56:53,792 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:56:53,792 INFO  repository.database.AgentDbRepository 25 <init> - Initializing AgentRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:56:53,792 INFO  repository.database.ReservationDbRepository 28 <init> - Initializing ReservationRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:56:53,802 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:56:53,802 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:56:53,802 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:56:53,802 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:56:53,802 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:56:54,190 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@681a8b4e)
+10 Mar 2021 23:56:54,221 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Sibiu', transport='BTurism', date=2021-05-10, departureTime=12:00, price=200.0, nrTickets=50, freeTickets=50}])
+10 Mar 2021 23:56:54,222 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:56:54,223 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:56:54,223 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:56:54,223 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:56:54,223 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:56:54,252 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@3f07b12c)
+10 Mar 2021 23:56:54,252 ERROR repository.database.AgentDbRepository 71 findAll - java.sql.SQLException: Column 'passwd' not found.
+10 Mar 2021 23:56:54,252 TRACE repository.database.AgentDbRepository 74 findAll - Exit with([])
+10 Mar 2021 23:56:54,252 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:56:54,252 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:56:54,252 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:56:54,252 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:56:54,260 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:56:54,290 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@f001896)
+10 Mar 2021 23:56:54,290 TRACE repository.database.ReservationDbRepository 81 findAll - Exit with([domain.Reservation@4bc28c33])
+10 Mar 2021 23:57:47,362 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:57:47,362 INFO  repository.database.AgentDbRepository 25 <init> - Initializing AgentRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:57:47,362 INFO  repository.database.ReservationDbRepository 28 <init> - Initializing ReservationRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:57:47,370 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:57:47,370 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:57:47,370 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:57:47,370 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:57:47,370 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:57:47,735 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@681a8b4e)
+10 Mar 2021 23:57:47,762 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Sibiu', transport='BTurism', date=2021-05-10, departureTime=12:00, price=200.0, nrTickets=50, freeTickets=50}])
+10 Mar 2021 23:57:47,762 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:57:47,762 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:57:47,762 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:57:47,762 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:57:47,762 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:57:47,782 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@3f07b12c)
+10 Mar 2021 23:57:47,792 TRACE repository.database.AgentDbRepository 74 findAll - Exit with([TravelAgent{username='magda@turism', passwd='1234567'}])
+10 Mar 2021 23:57:47,792 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:57:47,792 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:57:47,792 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:57:47,792 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:57:47,792 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:57:47,822 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@3d3ba765)
+10 Mar 2021 23:57:47,822 TRACE repository.database.ReservationDbRepository 81 findAll - Exit with([domain.Reservation@793138bd])
+10 Mar 2021 23:58:07,162 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:58:07,162 INFO  repository.database.AgentDbRepository 25 <init> - Initializing AgentRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:58:07,162 INFO  repository.database.ReservationDbRepository 28 <init> - Initializing ReservationRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+10 Mar 2021 23:58:07,170 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:58:07,175 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:58:07,175 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:58:07,175 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:58:07,175 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:58:07,530 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@681a8b4e)
+10 Mar 2021 23:58:07,556 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Sibiu', transport='BTurism', date=2021-05-10, departureTime=12:00, price=200.0, nrTickets=50, freeTickets=50}])
+10 Mar 2021 23:58:07,560 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:58:07,560 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:58:07,560 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:58:07,560 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:58:07,560 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:58:07,590 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@3f07b12c)
+10 Mar 2021 23:58:07,592 TRACE repository.database.AgentDbRepository 74 findAll - Exit with([TravelAgent{username='magda@turism', passwd='1234567'}])
+10 Mar 2021 23:58:07,592 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+10 Mar 2021 23:58:07,592 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+10 Mar 2021 23:58:07,592 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+10 Mar 2021 23:58:07,592 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+10 Mar 2021 23:58:07,592 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+10 Mar 2021 23:58:07,632 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@3d3ba765)
+10 Mar 2021 23:58:07,640 TRACE repository.database.ReservationDbRepository 81 findAll - Exit with([Reservation{client='Larisa Ionescu', telefon='07112223333', tripId=1, nrTick=4}])
+11 Mar 2021 00:02:59,040 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:02:59,040 INFO  repository.database.AgentDbRepository 25 <init> - Initializing AgentRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:02:59,040 INFO  repository.database.ReservationDbRepository 28 <init> - Initializing ReservationRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:02:59,051 TRACE repository.database.AgentDbRepository 30 findOne - Enter finding agent with id null 
+11 Mar 2021 00:02:59,051 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:02:59,060 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+11 Mar 2021 00:02:59,060 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+11 Mar 2021 00:02:59,060 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+11 Mar 2021 00:02:59,060 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+11 Mar 2021 00:02:59,422 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@708400f6)
+11 Mar 2021 00:03:36,502 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:03:36,507 INFO  repository.database.AgentDbRepository 25 <init> - Initializing AgentRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:03:36,510 INFO  repository.database.ReservationDbRepository 28 <init> - Initializing ReservationRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:03:36,517 TRACE repository.database.AgentDbRepository 30 findOne - Enter finding agent with id 0 
+11 Mar 2021 00:03:36,517 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:03:36,517 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+11 Mar 2021 00:03:36,517 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+11 Mar 2021 00:03:36,520 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+11 Mar 2021 00:03:36,520 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+11 Mar 2021 00:03:36,890 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@708400f6)
+11 Mar 2021 00:03:36,910 TRACE repository.database.AgentDbRepository 50 findOne - Exit: No travel agent found with id 0
+11 Mar 2021 00:03:36,910 TRACE repository.database.AgentDbRepository 86 save - Enter saving agent TravelAgent{username='aa@travel', passwd='1234567'} 
+11 Mar 2021 00:03:36,910 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:03:36,910 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@708400f6)
+11 Mar 2021 00:03:36,930 TRACE repository.database.AgentDbRepository 94 save - Enter rows affected 1
+11 Mar 2021 00:03:36,930 TRACE repository.database.AgentDbRepository 99 save - Exit
+11 Mar 2021 00:03:36,930 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:03:36,930 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+11 Mar 2021 00:03:36,930 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+11 Mar 2021 00:03:36,930 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+11 Mar 2021 00:03:36,930 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+11 Mar 2021 00:03:36,960 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@47a86fbb)
+11 Mar 2021 00:03:36,970 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Sibiu', transport='BTurism', date=2021-05-10, departureTime=12:00, price=200.0, nrTickets=50, freeTickets=50}])
+11 Mar 2021 00:03:36,970 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:03:36,970 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@708400f6)
+11 Mar 2021 00:03:36,970 TRACE repository.database.AgentDbRepository 74 findAll - Exit with([TravelAgent{username='magda@turism', passwd='1234567'}, TravelAgent{username='aa@travel', passwd='1234567'}])
+11 Mar 2021 00:03:36,970 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:03:36,970 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+11 Mar 2021 00:03:36,970 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+11 Mar 2021 00:03:36,970 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+11 Mar 2021 00:03:36,970 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+11 Mar 2021 00:03:37,010 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@43aaf813)
+11 Mar 2021 00:03:37,015 TRACE repository.database.ReservationDbRepository 81 findAll - Exit with([Reservation{client='Larisa Ionescu', telefon='07112223333', tripId=1, nrTick=4}])
+11 Mar 2021 00:07:06,378 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:07:06,390 INFO  repository.database.AgentDbRepository 25 <init> - Initializing AgentRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:07:06,390 INFO  repository.database.ReservationDbRepository 28 <init> - Initializing ReservationRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:07:06,398 TRACE repository.database.AgentDbRepository 109 delete - Enter deleting travel agent with 2
+11 Mar 2021 00:07:06,398 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:07:06,398 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+11 Mar 2021 00:07:06,398 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+11 Mar 2021 00:07:06,403 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+11 Mar 2021 00:07:06,404 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+11 Mar 2021 00:07:06,770 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@708400f6)
+11 Mar 2021 00:07:06,798 TRACE repository.database.AgentDbRepository 114 delete - Enter rows affected 1
+11 Mar 2021 00:07:06,798 TRACE repository.database.AgentDbRepository 119 delete - Exit
+11 Mar 2021 00:07:06,798 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:07:06,798 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+11 Mar 2021 00:07:06,798 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+11 Mar 2021 00:07:06,798 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+11 Mar 2021 00:07:06,798 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+11 Mar 2021 00:07:06,829 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@6955cb39)
+11 Mar 2021 00:07:06,858 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Sibiu', transport='BTurism', date=2021-05-10, departureTime=12:00, price=200.0, nrTickets=50, freeTickets=50}])
+11 Mar 2021 00:07:06,858 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:07:06,858 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@708400f6)
+11 Mar 2021 00:07:06,858 TRACE repository.database.AgentDbRepository 74 findAll - Exit with([TravelAgent{username='magda@turism', passwd='1234567'}])
+11 Mar 2021 00:07:06,858 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:07:06,858 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+11 Mar 2021 00:07:06,858 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+11 Mar 2021 00:07:06,858 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+11 Mar 2021 00:07:06,858 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+11 Mar 2021 00:07:06,889 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@33aeca0b)
+11 Mar 2021 00:07:06,898 TRACE repository.database.ReservationDbRepository 81 findAll - Exit with([Reservation{client='Larisa Ionescu', telefon='07112223333', tripId=1, nrTick=4}])
+11 Mar 2021 00:07:38,070 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:07:38,071 INFO  repository.database.AgentDbRepository 25 <init> - Initializing AgentRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:07:38,071 INFO  repository.database.ReservationDbRepository 28 <init> - Initializing ReservationRepository with properties: {agency.jdbc.user=root, aagency.jdbc.pass=postgres, aagency.jdbc.user=postgres, agency.jdbc.pass=mySQLtest, aagency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism, agency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism} 
+11 Mar 2021 00:07:38,080 TRACE repository.database.AgentDbRepository 109 delete - Enter deleting travel agent with 2
+11 Mar 2021 00:07:38,080 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:07:38,080 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+11 Mar 2021 00:07:38,080 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+11 Mar 2021 00:07:38,080 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+11 Mar 2021 00:07:38,080 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+11 Mar 2021 00:07:38,449 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@708400f6)
+11 Mar 2021 00:07:38,458 TRACE repository.database.AgentDbRepository 114 delete - Enter rows affected 0
+11 Mar 2021 00:07:38,458 TRACE repository.database.AgentDbRepository 119 delete - Exit
+11 Mar 2021 00:07:38,458 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:07:38,458 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+11 Mar 2021 00:07:38,458 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+11 Mar 2021 00:07:38,458 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+11 Mar 2021 00:07:38,458 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+11 Mar 2021 00:07:38,489 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@6955cb39)
+11 Mar 2021 00:07:38,510 TRACE repository.database.TripDbRepository 89 findAll - Exit with([Trip{place='Sibiu', transport='BTurism', date=2021-05-10, departureTime=12:00, price=200.0, nrTickets=50, freeTickets=50}])
+11 Mar 2021 00:07:38,510 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:07:38,510 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@708400f6)
+11 Mar 2021 00:07:38,510 TRACE repository.database.AgentDbRepository 74 findAll - Exit with([TravelAgent{username='magda@turism', passwd='1234567'}])
+11 Mar 2021 00:07:38,510 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+11 Mar 2021 00:07:38,510 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+11 Mar 2021 00:07:38,510 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:mysql://localhost:3306/agentieTurism
+11 Mar 2021 00:07:38,510 INFO  repository.database.JdbcUtils 27 getNewConnection - user: root
+11 Mar 2021 00:07:38,510 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: mySQLtest
+11 Mar 2021 00:07:38,551 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(com.mysql.cj.jdbc.ConnectionImpl@33aeca0b)
+11 Mar 2021 00:07:38,557 TRACE repository.database.ReservationDbRepository 81 findAll - Exit with([Reservation{client='Larisa Ionescu', telefon='07112223333', tripId=1, nrTick=4}])

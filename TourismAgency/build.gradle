@@ -10,17 +10,19 @@ repositories {
     mavenCentral()
 }
 
-mainClassName='TestMain'
+mainClassName='Main'
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    runtime 'mysql:mysql-connector-java:8.0.23'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.19'
     compile group: 'org.apache.logging.log4j', name:'log4j-core', version: '2.14.0'
     compile group: 'org.apache.logging.log4j', name:'log4j-api', version: '2.14.0'
 }
 
 jar{
     manifest{
-        attributes('Main-Class':'TestMain')
+        attributes('Main-Class':'Main')
     }
     from{
         configurations.compile.collect{it.isDirectory() ? it: zipTree(it)}

@@ -78,4 +78,17 @@ public class Trip extends Entity<Long>{
     public void setFreeTickets(Integer freeTickets) {
         this.freeTickets = freeTickets;
     }
+
+    @Override
+    public String toString() {
+        return "Trip{" +
+                "place='" + place + '\'' +
+                ", transport='" + transport + '\'' +
+                ", date=" + date +
+                ", departureTime=" + departureTime +
+                ", price=" + price +
+                ", nrTickets=" + nrTickets +
+                ", freeTickets=" + freeTickets +
+                '}';
+    }
 }

@@ -13,6 +13,16 @@ public class Reservation extends Entity<Long>{
         this.nrTick = nrTick;
     }
 
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "client='" + client + '\'' +
+                ", telefon='" + telefon + '\'' +
+                ", tripId=" + tripId +
+                ", nrTick=" + nrTick +
+                '}';
+    }
+
     public String getClient() {
         return client;
     }

@@ -24,4 +24,12 @@ public class TravelAgent extends Entity<Long>{
     public void setPasswd(String passwd) {
         this.passwd = passwd;
     }
+
+    @Override
+    public String toString() {
+        return "TravelAgent{" +
+                "username='" + username + '\'' +
+                ", passwd='" + passwd + '\'' +
+                '}';
+    }
 }
