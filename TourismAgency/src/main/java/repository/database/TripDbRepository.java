@@ -92,15 +92,14 @@ public class TripDbRepository implements TripRepository {
 
     @Override
     public Trip save(Trip entity) throws ValidationException, RepoException {
-        if (entity == null)
-            throw new RepoException("Repository exception: id must be not null!\n");
+
         tripValidator.validate(entity);
         if (findOne(entity.getId()) != null) {
             return entity;
         } else{
             logger.traceEntry("saving trip {} ",entity);
             Connection con=dbUtils.getConnection();
-            try(PreparedStatement preStmt=con.prepareStatement("insert into trip(place,transport,datat,price,tickets,freetickets) values (?,?,?,?,?,?)")){
+            try(PreparedStatement preStmt=con.prepareStatement("insert into trip(place,transport,datat,price,tickets,freetickets) values (?,?,?,?,?,?) returning idT ")){
                 //preStmt.setDouble(1,entity.getId());
                 preStmt.setString(1,entity.getPlace());
                 preStmt.setString(2,entity.getTransport());
@@ -109,7 +108,12 @@ public class TripDbRepository implements TripRepository {
                 preStmt.setDouble(4,entity.getPrice());
                 preStmt.setInt(5,entity.getNrTickets());
                 preStmt.setInt(6,entity.getFreeTickets());
-                int result=preStmt.executeUpdate();
+                try(ResultSet result=preStmt.executeQuery()) {
+                    if (result.next()) {
+                        long id = result.getLong("idt");
+                        entity.setId(id);
+
+                    }}
             }catch (SQLException ex){
                 logger.error(ex);
                 System.out.println("Error DB "+ex);
@@ -139,8 +143,7 @@ public class TripDbRepository implements TripRepository {
 
     @Override
     public Trip update(Trip entity) throws RepoException, ValidationException {
-        if (entity == null)
-            throw new RepoException("Repository exception: id must be not null!\n");
+
         tripValidator.validate(entity);
         if (findOne(entity.getId()) == null) {
             return entity;
@@ -191,7 +194,7 @@ public class TripDbRepository implements TripRepository {
         List<Trip> trips=new ArrayList<>();
         try(PreparedStatement preStmt=con.prepareStatement("select * from trip where datat between ? and ?")) {
             preStmt.setTimestamp(1,Timestamp.valueOf(LocalDateTime.of(minDate,LocalTime.MIN)));
-            preStmt.setTimestamp(1,Timestamp.valueOf(LocalDateTime.of(maxDate,LocalTime.MIN)));
+            preStmt.setTimestamp(2,Timestamp.valueOf(LocalDateTime.of(maxDate,LocalTime.MIN)));
             try(ResultSet result=preStmt.executeQuery()) {
                 while (result.next()) {
                     long id = result.getLong("idt");
@@ -248,6 +251,33 @@ public class TripDbRepository implements TripRepository {
 
     @Override
     public Iterable<Trip> findTripsByNameAndHours(String name, LocalTime minTime, LocalTime maxTime) {
-        return null;
+        Connection con=dbUtils.getConnection();
+        List<Trip> trips=new ArrayList<>();
+        try(PreparedStatement preStmt=con.prepareStatement("select * from trip where date_part('hour',datat) between ? and ? and place like ?")) {
+            preStmt.setInt(1,minTime.getHour());
+            preStmt.setInt(2,maxTime.getHour());
+            preStmt.setString(3,"%"+name+"%");
+            try(ResultSet result=preStmt.executeQuery()) {
+                while (result.next()) {
+                    long id = result.getLong("idt");
+                    String place = result.getString("place");
+                    String transport = result.getString("transport");
+                    LocalDateTime dataOra = result.getTimestamp("datat").toLocalDateTime();
+                    LocalDate data = dataOra.toLocalDate();
+                    LocalTime hour = dataOra.toLocalTime();
+                    double price = result.getDouble("price");
+                    int tickets = result.getInt("tickets");
+                    int freeTickets = result.getInt("freetickets");
+                    Trip trip = new Trip(place,transport,data,hour,price,tickets,freeTickets);
+                    trip.setId(id);
+                    trips.add(trip);
+                }
+            }
+        } catch (SQLException e) {
+            logger.error(e);
+            System.out.println("Error DB "+e);
+        }
+        logger.traceExit(trips);
+        return trips;
     }
 }

@@ -3,13 +3,13 @@ package domain;
 public class Reservation extends Entity<Long>{
     private String client;
     private String telefon;
-    private Long tripId;
+    private Trip trip;
     private Integer nrTick;
 
-    public Reservation(String client, String telefon, Long tripId, Integer nrTick) {
+    public Reservation(String client, String telefon, Trip trip, Integer nrTick) {
         this.client = client;
         this.telefon = telefon;
-        this.tripId = tripId;
+        this.trip = trip;
         this.nrTick = nrTick;
     }
 
@@ -18,7 +18,7 @@ public class Reservation extends Entity<Long>{
         return "Reservation{" +
                 "client='" + client + '\'' +
                 ", telefon='" + telefon + '\'' +
-                ", tripId=" + tripId +
+                ", tripId=" + trip +
                 ", nrTick=" + nrTick +
                 '}';
     }
@@ -39,12 +39,12 @@ public class Reservation extends Entity<Long>{
         this.telefon = telefon;
     }
 
-    public Long getTripId() {
-        return tripId;
+    public Trip getTripId() {
+        return trip;
     }
 
-    public void setTripId(Long tripId) {
-        this.tripId = tripId;
+    public void setTripId(Trip tripId) {
+        this.trip = tripId;
     }
 
     public Integer getNrTick() {

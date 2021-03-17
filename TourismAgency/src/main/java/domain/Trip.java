@@ -82,7 +82,8 @@ public class Trip extends Entity<Long>{
     @Override
     public String toString() {
         return "Trip{" +
-                "place='" + place + '\'' +
+                "id"+getId()+
+                ",  place='" + place + '\'' +
                 ", transport='" + transport + '\'' +
                 ", date=" + date +
                 ", departureTime=" + departureTime +

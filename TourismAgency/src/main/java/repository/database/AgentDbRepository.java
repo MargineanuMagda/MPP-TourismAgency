@@ -34,7 +34,7 @@ public class AgentDbRepository implements AgentRepository {
             preStmt.setLong(1,aLong);
             try(ResultSet result=preStmt.executeQuery()) {
                 if (result.next()) {
-                    long id = result.getLong("idt");
+                    long id = result.getLong("idf");
                     String username = result.getString("username");
                     String passwd = result.getString("passw");
                     TravelAgent travelAgent=new TravelAgent(username,passwd);
@@ -80,24 +80,28 @@ public class AgentDbRepository implements AgentRepository {
         if (entity == null)
             throw new RepoException("Repository exception: id must be not null!\n");
         agentValidator.validate(entity);
-        if (findOne(entity.getId()) != null) {
-            return entity;
-        } else{
+
             logger.traceEntry("saving agent {} ",entity);
             Connection con=dbUtils.getConnection();
-            try(PreparedStatement preStmt=con.prepareStatement("insert into login(username,passw) values (?,?)")){
+            try(PreparedStatement preStmt=con.prepareStatement("insert into login(username,passw) values (?,?) returning idf")){
                 //preStmt.setDouble(1,entity.getId());
                 preStmt.setString(1,entity.getUsername());
                 preStmt.setString(2,entity.getPasswd());
 
-                int result=preStmt.executeUpdate();
-                logger.traceEntry("rows affected {}",result);
+                try(ResultSet result=preStmt.executeQuery()) {
+                    if (result.next()) {
+                        long id = result.getLong("idf");
+                        entity.setId(id);
+
+                        logger.traceEntry("rows affected {}",result);
+                    }}
+
             }catch (SQLException ex){
                 logger.error(ex);
                 System.out.println("Error DB "+ex);
             }
             logger.traceExit();
-        }
+
         return null;
     }
 
@@ -163,5 +167,33 @@ public class AgentDbRepository implements AgentRepository {
             System.out.println("Error DB "+ex);
         }
         return 0;
+    }
+
+    @Override
+    public TravelAgent findAgentByUserAndPassw(String username1, String passw) {
+        logger.traceEntry("finding agent with username {} passwd:{}",username1,passw);
+        Connection con=dbUtils.getConnection();
+
+        try(PreparedStatement preStmt=con.prepareStatement("select * from login where username=? and passw=?")){
+            preStmt.setString(1,username1);
+            preStmt.setString(2,passw);
+            try(ResultSet result=preStmt.executeQuery()) {
+                if (result.next()) {
+                    long id = result.getLong("idf");
+                    String username = result.getString("username");
+                    String passwd = result.getString("passw");
+                    TravelAgent travelAgent=new TravelAgent(username,passwd);
+                    travelAgent.setId(id);
+                    logger.traceExit(travelAgent);
+                    return travelAgent;
+                }
+            }
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.out.println("Error DB "+ex);
+        }
+        logger.traceExit("No travel agent found with username {} ",username1);
+
+        return null;
     }
 }
