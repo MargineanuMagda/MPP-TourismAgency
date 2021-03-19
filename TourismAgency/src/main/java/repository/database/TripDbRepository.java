@@ -41,12 +41,11 @@ public class TripDbRepository implements TripRepository {
                     String place = result.getString("place");
                     String transport = result.getString("transport");
                     LocalDateTime dataOra = result.getTimestamp("datat").toLocalDateTime();
-                    LocalDate data = dataOra.toLocalDate();
-                    LocalTime hour = dataOra.toLocalTime();
+
                     double price = result.getDouble("price");
                     int tickets = result.getInt("tickets");
                     int freeTickets = result.getInt("freetickets");
-                    Trip trip = new Trip(place,transport,data,hour,price,tickets,freeTickets);
+                    Trip trip = new Trip(place,transport,dataOra,price,tickets,freeTickets);
                     trip.setId(id);
                     logger.traceExit(trip);
                     return trip;
@@ -72,12 +71,11 @@ public class TripDbRepository implements TripRepository {
                     String place = result.getString("place");
                     String transport = result.getString("transport");
                     LocalDateTime dataOra = result.getTimestamp("datat").toLocalDateTime();
-                    LocalDate data = dataOra.toLocalDate();
-                    LocalTime hour = dataOra.toLocalTime();
+
                     double price = result.getDouble("price");
                     int tickets = result.getInt("tickets");
                     int freeTickets = result.getInt("freetickets");
-                    Trip trip = new Trip(place,transport,data,hour,price,tickets,freeTickets);
+                    Trip trip = new Trip(place,transport,dataOra,price,tickets,freeTickets);
                     trip.setId(id);
                     trips.add(trip);
                 }
@@ -103,7 +101,7 @@ public class TripDbRepository implements TripRepository {
                 //preStmt.setDouble(1,entity.getId());
                 preStmt.setString(1,entity.getPlace());
                 preStmt.setString(2,entity.getTransport());
-                preStmt.setTimestamp(3,Timestamp.valueOf(LocalDateTime.of(entity.getDate(),entity.getDepartureTime())));
+                preStmt.setTimestamp(3,Timestamp.valueOf(entity.getDate()));
 
                 preStmt.setDouble(4,entity.getPrice());
                 preStmt.setInt(5,entity.getNrTickets());
@@ -154,7 +152,7 @@ public class TripDbRepository implements TripRepository {
                 //preStmt.setDouble(1,entity.getId());
                 preStmt.setString(1,entity.getPlace());
                 preStmt.setString(2,entity.getTransport());
-                preStmt.setTimestamp(3,Timestamp.valueOf(LocalDateTime.of(entity.getDate(),entity.getDepartureTime())));
+                preStmt.setTimestamp(3,Timestamp.valueOf(entity.getDate()));
 
                 preStmt.setDouble(4,entity.getPrice());
                 preStmt.setInt(5,entity.getNrTickets());
@@ -201,12 +199,11 @@ public class TripDbRepository implements TripRepository {
                     String place = result.getString("place");
                     String transport = result.getString("transport");
                     LocalDateTime dataOra = result.getTimestamp("datat").toLocalDateTime();
-                    LocalDate data = dataOra.toLocalDate();
-                    LocalTime hour = dataOra.toLocalTime();
+
                     double price = result.getDouble("price");
                     int tickets = result.getInt("tickets");
                     int freeTickets = result.getInt("freetickets");
-                    Trip trip = new Trip(place,transport,data,hour,price,tickets,freeTickets);
+                    Trip trip = new Trip(place,transport,dataOra,price,tickets,freeTickets);
                     trip.setId(id);
                     trips.add(trip);
                 }
@@ -231,12 +228,10 @@ public class TripDbRepository implements TripRepository {
                     String place = result.getString("place");
                     String transport = result.getString("transport");
                     LocalDateTime dataOra = result.getTimestamp("datat").toLocalDateTime();
-                    LocalDate data = dataOra.toLocalDate();
-                    LocalTime hour = dataOra.toLocalTime();
                     double price = result.getDouble("price");
                     int tickets = result.getInt("tickets");
                     int freeTickets = result.getInt("freetickets");
-                    Trip trip = new Trip(place,transport,data,hour,price,tickets,freeTickets);
+                    Trip trip = new Trip(place,transport,dataOra,price,tickets,freeTickets);
                     trip.setId(id);
                     trips.add(trip);
                 }
@@ -263,12 +258,11 @@ public class TripDbRepository implements TripRepository {
                     String place = result.getString("place");
                     String transport = result.getString("transport");
                     LocalDateTime dataOra = result.getTimestamp("datat").toLocalDateTime();
-                    LocalDate data = dataOra.toLocalDate();
-                    LocalTime hour = dataOra.toLocalTime();
+
                     double price = result.getDouble("price");
                     int tickets = result.getInt("tickets");
                     int freeTickets = result.getInt("freetickets");
-                    Trip trip = new Trip(place,transport,data,hour,price,tickets,freeTickets);
+                    Trip trip = new Trip(place,transport,dataOra,price,tickets,freeTickets);
                     trip.setId(id);
                     trips.add(trip);
                 }

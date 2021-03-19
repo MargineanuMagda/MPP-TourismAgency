@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
 }
 
 group 'org.example'
@@ -10,7 +11,7 @@ repositories {
     mavenCentral()
 }
 
-mainClassName='Main'
+mainClassName='MainFX'
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
@@ -27,6 +28,10 @@ jar{
     from{
         configurations.compile.collect{it.isDirectory() ? it: zipTree(it)}
     }
+}
+javafx {
+    version = "13"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 test {
     useJUnitPlatform()

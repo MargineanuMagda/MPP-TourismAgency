@@ -10,6 +10,7 @@ import repository.database.TripDbRepository;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Properties;
 
@@ -19,9 +20,11 @@ public class Main {
         Properties props= new Properties();
 
         try {
-            props.load(new FileReader("TourismAgency/database.config"));
+            //props.load(new FileReader("database.config"));
+            props.load(new FileReader("D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurism\\TourismAgency\\database.config"));
+
         } catch (IOException e) {
-            System.out.println("spectacol.config not found! "+ e.getMessage());
+            System.out.println("database.config not found! "+ e.getMessage());
         }
 
         Validator<Trip> tripValidator=new TripValidator();
@@ -31,9 +34,9 @@ public class Main {
         Validator<Reservation> reservationValidator=new ReservationValidator();
         ReservationRepository repoReservation = new ReservationDbRepository(props,reservationValidator);
 
-        Trip s= new Trip("Budapesta","ATrans",LocalDate.of(2021, 9,1), LocalTime.now(),700d,70,70);
+        Trip s= new Trip("Budapesta","ATrans", LocalDateTime.of(LocalDate.of(2021, 9,1), LocalTime.now()),700d,70,70);
 
-        s.setId(3l);
+        s.setId(3L);
         //TRIP ADD,UPDATE,DELETE
         /*try {
             repoTrip.save(s);
@@ -64,7 +67,7 @@ public class Main {
             e.printStackTrace();
         }*/
 
-        System.out.println(repoAgent.findAgentByUserAndPassw("andrei@travel","1234567"));
+        System.out.println(repoAgent.findAgentByUserAndPassw("magdalena@travel","1234567"));
         repoAgent.findAll().forEach(System.out::println);
 
         //RESERVATION REPO CRUD
@@ -94,7 +97,7 @@ public class Main {
        repoReservation.findReservationByClient("Pop").forEach(System.out::println);
 
         //find reservation by trip id
-        repoReservation.findReservationByTripID(3l).forEach(System.out::println);
+        repoReservation.findReservationByTripID(3L).forEach(System.out::println);
 
         /*System.out.println(repoTrip.findAll());
 

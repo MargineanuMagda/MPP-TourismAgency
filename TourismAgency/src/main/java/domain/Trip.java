@@ -1,31 +1,21 @@
 package domain;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class Trip extends Entity<Long>{
     private String place;
     private String transport;
-    private LocalDate date;
-
-    public LocalTime getDepartureTime() {
-        return departureTime;
-    }
-
-    public void setDepartureTime(LocalTime departureTime) {
-        this.departureTime = departureTime;
-    }
-
-    private LocalTime departureTime;
+    private LocalDateTime date;
     private Double price;
     private Integer nrTickets;
     private Integer freeTickets;
 
-    public Trip(String place, String transport, LocalDate date, LocalTime departureTime, Double price, Integer nrTickets, Integer freeTickets) {
+    public Trip(String place, String transport, LocalDateTime date, Double price, Integer nrTickets, Integer freeTickets) {
         this.place = place;
         this.transport = transport;
         this.date = date;
-        this.departureTime = departureTime;
         this.price = price;
         this.nrTickets = nrTickets;
         this.freeTickets = freeTickets;
@@ -47,11 +37,11 @@ public class Trip extends Entity<Long>{
         this.transport = transport;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 
@@ -86,7 +76,6 @@ public class Trip extends Entity<Long>{
                 ",  place='" + place + '\'' +
                 ", transport='" + transport + '\'' +
                 ", date=" + date +
-                ", departureTime=" + departureTime +
                 ", price=" + price +
                 ", nrTickets=" + nrTickets +
                 ", freeTickets=" + freeTickets +

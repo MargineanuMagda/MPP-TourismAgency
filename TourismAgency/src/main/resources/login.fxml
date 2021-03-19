@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="603.0" stylesheets="css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <TabPane fx:id="tabPane" layoutY="123.0" prefHeight="302.0" prefWidth="687.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Sign in">
+            <content>
+              <AnchorPane accessibleRole="HYPERLINK" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="userTxt" layoutX="364.0" layoutY="108.0" />
+                        <Label layoutX="256.0" layoutY="107.0" prefHeight="26.0" prefWidth="111.0" text="Username" />
+                        <Hyperlink layoutX="252.0" layoutY="187.0" prefHeight="0.0" prefWidth="223.0" text="You don't have an account?Create one!" onAction="#signUpTab"/>
+                        <Label layoutX="256.0" layoutY="147.0" prefHeight="26.0" prefWidth="111.0" text="Password" />
+                        <Button layoutX="490.0" layoutY="210.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="69.0" text="Login" onAction="#login"/>
+                        <PasswordField fx:id="passwdTxt" layoutX="364.0" layoutY="148.0" />
+                        <Label layoutX="378.0" prefHeight="43.0" prefWidth="269.0" style="-fx-font-size: 36px" text="TravelPack">
+
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab id="signUp" text="Sign up">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="newUsername" layoutX="245.0" layoutY="60.0" />
+                        <PasswordField fx:id="newPass1" layoutX="245.0" layoutY="111.0" />
+                        <PasswordField fx:id="newPass2" layoutX="245.0" layoutY="169.0" />
+                        <Label layoutX="151.0" layoutY="61.0" prefHeight="24.0" prefWidth="93.0" text="Username" />
+                        <Label layoutX="151.0" layoutY="112.0" prefHeight="24.0" prefWidth="93.0" text="Password" />
+                        <Label layoutX="151.0" layoutY="157.0" prefHeight="24.0" prefWidth="93.0" text="Password" />
+                        <Label layoutX="151.0" layoutY="183.0" prefHeight="24.0" prefWidth="93.0" text="confirmation" />
+                        <Button layoutX="537.0" layoutY="206.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="73.0" text="Sign up" onAction="#signUp"/>
+                        <Label layoutX="433.0" layoutY="95.0" prefHeight="32.0" prefWidth="247.0" text="Your account is ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="512.0" layoutY="120.0" prefHeight="32.0" prefWidth="170.0" text="almost ready">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="377.0" prefHeight="43.0" prefWidth="269.0" style="-fx-font-size: 36px" text="TravelPack">
+
+                        </Label>
+                        <ImageView fitHeight="130.0" fitWidth="175.0" layoutX="433.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/loader1.gif" />
+                           </image></ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="322.0" layoutY="71.0" prefHeight="43.0" prefWidth="149.0" text="Welcome to">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="130.0" fitWidth="143.0" layoutX="510.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/world.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

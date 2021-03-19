@@ -1770,3 +1770,46 @@ place='Iasi', transport='ATrans', date=2021-03-17, departureTime=19:48:28, price
 17 Mar 2021 23:51:28,837 TRACE repository.database.JdbcUtils 48 getConnection - Enter
 17 Mar 2021 23:51:28,837 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@59d4cd39)
 17 Mar 2021 23:51:28,837 TRACE repository.database.ReservationDbRepository 276 findReservationByTripID - Exit with([Reservation{client='Margineanu Magdalena', telefon='0749 779 473', tripId=Trip{id3,  place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:02:53.740617, price=400.0, nrTickets=120, freeTickets=120}, nrTick=4}, Reservation{client='Margineanu Magdalena', telefon='0749 779 473', tripId=Trip{id3,  place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:02:53.740617, price=400.0, nrTickets=120, freeTickets=120}, nrTick=7}])
+18 Mar 2021 22:03:49,115 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {} 
+18 Mar 2021 22:03:49,119 INFO  repository.database.AgentDbRepository 25 <init> - Initializing AgentRepository with properties: {} 
+18 Mar 2021 22:03:49,120 INFO  repository.database.ReservationDbRepository 31 <init> - Initializing ReservationRepository with properties: {} 
+18 Mar 2021 22:03:49,125 TRACE repository.database.AgentDbRepository 174 findAgentByUserAndPassw - Enter finding agent with username magdalena@travel passwd:1234567
+18 Mar 2021 22:03:49,125 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+18 Mar 2021 22:03:49,126 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+18 Mar 2021 22:03:49,126 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... null
+18 Mar 2021 22:03:49,126 INFO  repository.database.JdbcUtils 27 getNewConnection - user: null
+18 Mar 2021 22:03:49,126 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: null
+18 Mar 2021 22:03:49,128 ERROR repository.database.JdbcUtils 41 getNewConnection - java.sql.SQLException: The url cannot be null
+18 Mar 2021 22:03:49,128 TRACE repository.database.JdbcUtils 57 getConnection - Exit
+18 Mar 2021 22:05:16,159 INFO  repository.database.TripDbRepository 28 <init> - Initializing TripRepository with properties: {agency.jdbc.user=postgres, aagency.jdbc.pass=mySQLtest, aagency.jdbc.user=root, agency.jdbc.pass=postgres, aagency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism, agency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism} 
+18 Mar 2021 22:05:16,163 INFO  repository.database.AgentDbRepository 25 <init> - Initializing AgentRepository with properties: {agency.jdbc.user=postgres, aagency.jdbc.pass=mySQLtest, aagency.jdbc.user=root, agency.jdbc.pass=postgres, aagency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism, agency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism} 
+18 Mar 2021 22:05:16,164 INFO  repository.database.ReservationDbRepository 31 <init> - Initializing ReservationRepository with properties: {agency.jdbc.user=postgres, aagency.jdbc.pass=mySQLtest, aagency.jdbc.user=root, agency.jdbc.pass=postgres, aagency.jdbc.url=jdbc:mysql://localhost:3306/agentieTurism, agency.jdbc.url=jdbc:postgresql://localhost:5432/agentieTurism} 
+18 Mar 2021 22:05:16,169 TRACE repository.database.AgentDbRepository 174 findAgentByUserAndPassw - Enter finding agent with username magdalena@travel passwd:1234567
+18 Mar 2021 22:05:16,169 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+18 Mar 2021 22:05:16,170 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+18 Mar 2021 22:05:16,170 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentieTurism
+18 Mar 2021 22:05:16,170 INFO  repository.database.JdbcUtils 27 getNewConnection - user: postgres
+18 Mar 2021 22:05:16,170 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: postgres
+18 Mar 2021 22:05:16,479 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@13b3d178)
+18 Mar 2021 22:05:16,490 TRACE repository.database.AgentDbRepository 187 findAgentByUserAndPassw - Exit with(TravelAgent{username='magdalena@travel', passwd='1234567'})
+18 Mar 2021 22:05:16,490 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+18 Mar 2021 22:05:16,490 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@13b3d178)
+18 Mar 2021 22:05:16,491 TRACE repository.database.AgentDbRepository 74 findAll - Exit with([TravelAgent{username='magdalena@travel', passwd='1234567'}, TravelAgent{username='ioan@travel', passwd='1234567'}, TravelAgent{username='andrei@travel', passwd='1234567'}])
+18 Mar 2021 22:05:16,492 TRACE repository.database.ReservationDbRepository 36 findOne - Enter finding reservation with id 4 
+18 Mar 2021 22:05:16,492 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+18 Mar 2021 22:05:16,492 TRACE repository.database.JdbcUtils 21 getNewConnection - Enter
+18 Mar 2021 22:05:16,493 INFO  repository.database.JdbcUtils 26 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentieTurism
+18 Mar 2021 22:05:16,493 INFO  repository.database.JdbcUtils 27 getNewConnection - user: postgres
+18 Mar 2021 22:05:16,493 INFO  repository.database.JdbcUtils 28 getNewConnection - pass: postgres
+18 Mar 2021 22:05:16,527 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@78a773fd)
+18 Mar 2021 22:05:16,552 TRACE repository.database.ReservationDbRepository 63 findOne - Exit with(Reservation{client='Margineanu Magdalena', telefon='0749 779 473', tripId=Trip{id3,  place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:02:53.740617, price=400.0, nrTickets=120, freeTickets=120}, nrTick=7})
+18 Mar 2021 22:05:16,553 TRACE repository.database.ReservationDbRepository 168 update - Enter updating reservation Reservation{client='Margineanu Magdalena', telefon='0749 779 473', tripId=Trip{id3,  place='Budapesta', transport='ATrans', date=2021-09-01, departureTime=22:05:16.167930500, price=700.0, nrTickets=70, freeTickets=70}, nrTick=7} 
+18 Mar 2021 22:05:16,553 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+18 Mar 2021 22:05:16,553 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@78a773fd)
+18 Mar 2021 22:05:16,555 TRACE repository.database.ReservationDbRepository 183 update - Exit
+18 Mar 2021 22:05:16,556 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+18 Mar 2021 22:05:16,556 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@78a773fd)
+18 Mar 2021 22:05:16,557 TRACE repository.database.ReservationDbRepository 239 findReservationByClient - Exit with([Reservation{client='Pop Ioan', telefon='0740000000', tripId=Trip{id1,  place='Paris', transport='BTrans', date=2021-07-10, departureTime=09:00, price=400.0, nrTickets=130, freeTickets=130}, nrTick=2}])
+18 Mar 2021 22:05:16,558 TRACE repository.database.JdbcUtils 48 getConnection - Enter
+18 Mar 2021 22:05:16,558 TRACE repository.database.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@78a773fd)
+18 Mar 2021 22:05:16,559 TRACE repository.database.ReservationDbRepository 276 findReservationByTripID - Exit with([Reservation{client='Margineanu Magdalena', telefon='0749 779 473', tripId=Trip{id3,  place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:02:53.740617, price=400.0, nrTickets=120, freeTickets=120}, nrTick=4}, Reservation{client='Margineanu Magdalena', telefon='0749 779 473', tripId=Trip{id3,  place='Brasov', transport='EliTrans', date=2021-06-26, departureTime=22:02:53.740617, price=400.0, nrTickets=120, freeTickets=120}, nrTick=7}])

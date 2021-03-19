@@ -50,12 +50,10 @@ public class ReservationDbRepository implements ReservationRepository {
                     String place = result.getString("place");
                     String transport = result.getString("transport");
                     LocalDateTime dataOra = result.getTimestamp("datat").toLocalDateTime();
-                    LocalDate data = dataOra.toLocalDate();
-                    LocalTime hour = dataOra.toLocalTime();
                     double price = result.getDouble("price");
                     int ticketsTrip = result.getInt("tick");
                     int freeTickets = result.getInt("freetickets");
-                    Trip trip = new Trip(place,transport,data,hour,price,ticketsTrip,freeTickets);
+                    Trip trip = new Trip(place,transport,dataOra,price,ticketsTrip,freeTickets);
                     trip.setId(idT);
 
                     Reservation reservation = new Reservation(client,tel,trip,tickets);
@@ -90,12 +88,11 @@ public class ReservationDbRepository implements ReservationRepository {
                     String place = result.getString("place");
                     String transport = result.getString("transport");
                     LocalDateTime dataOra = result.getTimestamp("datat").toLocalDateTime();
-                    LocalDate data = dataOra.toLocalDate();
-                    LocalTime hour = dataOra.toLocalTime();
+
                     double price = result.getDouble("price");
                     int ticketsTrip = result.getInt("tick");
                     int freeTickets = result.getInt("freetickets");
-                    Trip trip = new Trip(place,transport,data,hour,price,ticketsTrip,freeTickets);
+                    Trip trip = new Trip(place,transport,dataOra,price,ticketsTrip,freeTickets);
                     trip.setId(idT);
 
                     Reservation reservation = new Reservation(client,tel,trip,tickets);
@@ -219,12 +216,11 @@ public class ReservationDbRepository implements ReservationRepository {
                     String place = result.getString("place");
                     String transport = result.getString("transport");
                     LocalDateTime dataOra = result.getTimestamp("datat").toLocalDateTime();
-                    LocalDate data = dataOra.toLocalDate();
-                    LocalTime hour = dataOra.toLocalTime();
+
                     double price = result.getDouble("price");
                     int ticketsTrip = result.getInt("tick");
                     int freeTickets = result.getInt("freetickets");
-                    Trip trip = new Trip(place,transport,data,hour,price,ticketsTrip,freeTickets);
+                    Trip trip = new Trip(place,transport,dataOra,price,ticketsTrip,freeTickets);
                     trip.setId(idT);
 
                     Reservation reservation = new Reservation(client,tel,trip,tickets);
@@ -256,12 +252,10 @@ public class ReservationDbRepository implements ReservationRepository {
                     String place = result.getString("place");
                     String transport = result.getString("transport");
                     LocalDateTime dataOra = result.getTimestamp("datat").toLocalDateTime();
-                    LocalDate data = dataOra.toLocalDate();
-                    LocalTime hour = dataOra.toLocalTime();
                     double price = result.getDouble("price");
                     int ticketsTrip = result.getInt("tick");
                     int freeTickets = result.getInt("freetickets");
-                    Trip trip = new Trip(place,transport,data,hour,price,ticketsTrip,freeTickets);
+                    Trip trip = new Trip(place,transport,dataOra,price,ticketsTrip,freeTickets);
                     trip.setId(idT);
 
                     Reservation reservation = new Reservation(client,tel,trip,tickets);
