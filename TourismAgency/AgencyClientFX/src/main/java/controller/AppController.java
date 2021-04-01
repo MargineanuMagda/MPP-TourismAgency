@@ -1,30 +1,94 @@
 package controller;
 
+import domain.Reservation;
+import domain.TravelAgent;
 import domain.Trip;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.stage.Stage;
-import service.ServiceAgency;
+import services.IAgencyObserver;
+import services.IAgencyService;
+import services.ServiceException;
 
+import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 import java.util.Optional;
+import java.util.ResourceBundle;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-public class AppController {
-    private ServiceAgency service;
-    Stage mainStage;
-    public void setService(ServiceAgency serv,Stage mainStage){
+public class AppController implements Initializable, IAgencyObserver {
+    private IAgencyService service;
+    private TravelAgent user;
+
+    public void setService(IAgencyService serv){
         this.service=serv;
-        this.mainStage=mainStage;
+        System.out.println("Initializare service pentru AppController");
+
+        //in caz ca nu merge initializa
         initTable1();
-        initLabels();
+        //initLabels();
         initCombo();
+    }
+    public void setUser(TravelAgent agent){
+        this.user=agent;
+        initLabels();
+    }
+
+    public AppController() {
+        System.out.println("Constructor without params");
+    }
+
+    public AppController(IAgencyService service) {
+        this.service = service;
+        System.out.println("Constructor with param server ");
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        System.out.println("INIT ");
+
+    }
+
+    @Override
+    public void reservationAdded(List<Trip> tripList) {
+        //initTable1();
+        Platform.runLater(()->{
+            refreshTables(tripList);
+        });
+
+    }
+
+    private void refreshTables(List<Trip> tripList) {
+        modelTrips.setAll(tripList);
+        place1Col.setCellValueFactory(new PropertyValueFactory<>("Place"));
+        trans1Col.setCellValueFactory(new PropertyValueFactory<>("Transport"));
+        price1Col.setCellValueFactory(new PropertyValueFactory<>("Price"));
+        date1Col.setCellValueFactory(new PropertyValueFactory<>("Date"));
+        tick1Col.setCellValueFactory(new PropertyValueFactory<>("NrTickets"));
+        freeTick1Col.setCellValueFactory(new PropertyValueFactory<>("FreeTickets"));
+
+        tableTrip1.setRowFactory(tv -> new TableRow<>() {
+            @Override
+            protected void updateItem(Trip item, boolean empty) {
+                super.updateItem(item, empty);
+                if (item == null || empty)
+                    setStyle("");
+                else if (item.getFreeTickets() == 0)
+                    setStyle("-fx-background-color:   red");
+
+            }
+        });
+        tableTrip1.setItems(modelTrips);
+
     }
 
     private void initCombo() {
@@ -34,7 +98,7 @@ public class AppController {
     @FXML
     Label username;
     private void initLabels() {
-        username.setText(service.getMainUser().getUsername().split("@")[0]);
+        username.setText(user.getUsername().split("@")[0]);
         sliderMin.valueProperty().addListener((observableValue, oldValue, newValue) -> lblMin.textProperty().setValue(
                 String.valueOf(newValue.intValue())));
         sliderMax.valueProperty().addListener((observableValue, oldValue, newValue) -> lblMax.textProperty().setValue(
@@ -65,61 +129,36 @@ public class AppController {
     ObservableList<Trip> modelTrips= FXCollections.observableArrayList();
 
     private void initTable1() {
-        Iterable<Trip> trips=service.getAllTrips();
-        List<Trip> tripList= StreamSupport.stream(trips.spliterator(), false).collect(Collectors.toList());
-        modelTrips.setAll(tripList);
-        place1Col.setCellValueFactory(new PropertyValueFactory<>("Place"));
-        trans1Col.setCellValueFactory(new PropertyValueFactory<>("Transport"));
-        price1Col.setCellValueFactory(new PropertyValueFactory<>("Price"));
-        date1Col.setCellValueFactory(new PropertyValueFactory<>("Date"));
-        tick1Col.setCellValueFactory(new PropertyValueFactory<>("NrTickets"));
-        freeTick1Col.setCellValueFactory(new PropertyValueFactory<>("FreeTickets"));
-        /*freeTick1Col.setCellFactory(column -> {
-            return new TableCell<Trip, Integer>() {
+        try {
+            Iterable<Trip> trips = service.getAllTrips();
+            List<Trip> tripList = StreamSupport.stream(trips.spliterator(), false).collect(Collectors.toList());
+            modelTrips.setAll(tripList);
+            place1Col.setCellValueFactory(new PropertyValueFactory<>("Place"));
+            trans1Col.setCellValueFactory(new PropertyValueFactory<>("Transport"));
+            price1Col.setCellValueFactory(new PropertyValueFactory<>("Price"));
+            date1Col.setCellValueFactory(new PropertyValueFactory<>("Date"));
+            tick1Col.setCellValueFactory(new PropertyValueFactory<>("NrTickets"));
+            freeTick1Col.setCellValueFactory(new PropertyValueFactory<>("FreeTickets"));
+
+            tableTrip1.setRowFactory(tv -> new TableRow<>() {
                 @Override
-                protected void updateItem(Integer item, boolean empty) {
+                protected void updateItem(Trip item, boolean empty) {
                     super.updateItem(item, empty);
-
-                    if (item == null || empty) { //If the cell is empty
-                        setText(null);
+                    if (item == null || empty)
                         setStyle("");
-                    } else { //If the cell is not empty
+                    else if (item.getFreeTickets() == 0)
+                        setStyle("-fx-background-color:   red");
 
-                        setText(item.toString()); //Put the String data in the cell
-
-                        //We get here all the info of the Person of this row
-                       // Person auxPerson = getTableView().getItems().get(getIndex());
-
-                        // Style all persons wich name is "Edgard"
-                        if (item==0) {
-                            //setTextFill(Color.RED); //The text in red
-                            setStyle("-fx-background-color: yellow;-fx-text-fill: red"); //The background of the cell in yellow
-                        } *//*else {
-                            //Here I see if the row of this cell is selected or not
-                            if(getTableView().getSelectionModel().getSelectedItems().contains(auxPerson))
-                                setTextFill(Color.WHITE);
-                            else
-                                setTextFill(Color.BLACK);
-                        }*//*
-                    }
                 }
-            };
+            });
+            tableTrip1.setItems(modelTrips);
 
-        });*/
-        tableTrip1.setRowFactory(tv -> new TableRow<Trip>() {
-            @Override
-            protected void updateItem(Trip item, boolean empty) {
-                super.updateItem(item, empty);
-                if (item == null || empty)
-                    setStyle("");
-                else
-                if (item.getFreeTickets() == 0)
-                    setStyle("-fx-background-color:   red");
-
-            }
-        });
-        tableTrip1.setItems(modelTrips);
-
+        }catch (ServiceException er){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error ");
+            alert.setContentText(er.getMessage());
+            alert.showAndWait();
+        }
     }
 
 
@@ -170,7 +209,12 @@ public class AppController {
             maxHour=(int)sliderMax.getValue();
 
         System.out.println("!!!!!"+name+" "+minHour+" "+maxHour);
-        Iterable<Trip> tripFiltered=service.findTripsByNameAndHours(name, LocalTime.of(minHour,0),LocalTime.of(maxHour,0));
+        Iterable<Trip> tripFiltered= null;
+        try {
+            tripFiltered = service.findTripsByNameAndHours(name, LocalTime.of(minHour,0),LocalTime.of(maxHour,0));
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
         tripFiltered.forEach(System.out::println);
         initTable2(tripFiltered);
 
@@ -254,8 +298,9 @@ public class AppController {
         int nrTick = nrTickSpinner.getValue();
         if(!client.equals("") && !tel.equals("")&&toReserve!=null){
             try{
-                service.addReservation(client,tel,toReserve,nrTick);
-                initTable1();
+                Reservation r = new Reservation(client,tel,toReserve,nrTick);
+                service.addReservation(r);
+                //initTable1();
                 Alert alert=new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Info ");
                 alert.setContentText("reservation added succesfully");
@@ -280,17 +325,27 @@ public class AppController {
         alert.setTitle("Error ");
         alert.setContentText("Are you sure you want to leave?");
         Optional<ButtonType> result = alert.showAndWait();
-        if (!result.isPresent())
+        if (result.isPresent())
         // alert is exited, no button has been pressed.
         {
+            if (result.get() == ButtonType.OK) {
+                try {
+                    service.logout(user, this);
 
+                } catch (ServiceException e) {
+                    System.out.println("Logout error " + e);
+                }
+                alert.close();
 
-        } else if (result.get() == ButtonType.OK) {
-            mainStage.close();
-            alert.close();
-
-        } else if (result.get() == ButtonType.CANCEL) {
-            alert.close();
+            } else if (result.get() == ButtonType.CANCEL) {
+                alert.close();
+            }
         }
+    }
+
+
+    public void handleLogout(ActionEvent actionEvent) {
+        logout();
+        ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
     }
 }

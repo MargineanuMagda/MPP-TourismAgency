@@ -3,6 +3,9 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/TourismAgency" />
+    <file type="web" url="file://$PROJECT_DIR$/TourismAgency/AgencyDomain" />
+    <file type="web" url="file://$PROJECT_DIR$/TourismAgency/AgencyPersistance" />
+    <file type="web" url="file://$PROJECT_DIR$/TourismAgency/AgentieServer" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="openjdk-15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

@@ -20,8 +20,8 @@ public class Main {
         Properties props= new Properties();
 
         try {
-            //props.load(new FileReader("database.config"));
-            props.load(new FileReader("D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurism\\TourismAgency\\database.config"));
+            props.load(new FileReader("database.config"));
+            //props.load(new FileReader("D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurism\\TourismAgency\\database.config"));
 
         } catch (IOException e) {
             System.out.println("database.config not found! "+ e.getMessage());

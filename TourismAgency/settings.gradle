@@ -1,2 +1,9 @@
 rootProject.name = 'TourismAgency'
+include 'AgencyDomain'
+include 'AgencyPersistance'
+include 'AgencyServices'
+include 'AgencyClient'
+include 'AgencyNetworking'
+include 'AgencyClientFX'
+include 'AgencyServer'
 

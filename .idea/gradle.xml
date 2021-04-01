@@ -9,6 +9,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/TourismAgency" />
+            <option value="$PROJECT_DIR$/TourismAgency/AgencyClient" />
+            <option value="$PROJECT_DIR$/TourismAgency/AgencyClientFX" />
+            <option value="$PROJECT_DIR$/TourismAgency/AgencyDomain" />
+            <option value="$PROJECT_DIR$/TourismAgency/AgencyNetworking" />
+            <option value="$PROJECT_DIR$/TourismAgency/AgencyPersistance" />
+            <option value="$PROJECT_DIR$/TourismAgency/AgencyServer" />
+            <option value="$PROJECT_DIR$/TourismAgency/AgencyServices" />
           </set>
         </option>
       </GradleProjectSettings>

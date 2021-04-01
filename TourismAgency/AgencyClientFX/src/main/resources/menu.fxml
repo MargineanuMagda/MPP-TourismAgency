@@ -119,7 +119,7 @@
                 <content>
                     <AnchorPane>
                      <children>
-                        <Button layoutX="348.0" layoutY="214.0" mnemonicParsing="false" onAction="#logout" prefHeight="39.0" prefWidth="78.0" text="Logout" />
+                        <Button layoutX="348.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="39.0" prefWidth="78.0" text="Logout" />
                         <Label layoutX="166.0" layoutY="68.0" prefHeight="34.0" prefWidth="250.0" style="-fx-font-size: 22px" text="Hope to see you soon," />
 
                         <Label fx:id="username" layoutX="277.0" layoutY="115.0" prefHeight="68.0" prefWidth="343.0" style="-fx-font-family: 'Brush Script MT';-fx-font-size: 50px" text="Label" />

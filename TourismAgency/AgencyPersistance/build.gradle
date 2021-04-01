@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compile project(':AgencyDomain')
+    runtime 'mysql:mysql-connector-java:8.0.23'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.19'
+
+    compile group: 'org.apache.logging.log4j', name:'log4j-core', version: '2.14.0'
+    compile group: 'org.apache.logging.log4j', name:'log4j-api', version: '2.14.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}

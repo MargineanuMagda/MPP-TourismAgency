@@ -1,0 +1,142 @@
+.root{
+   /* -fx-background-color: linear-gradient(#204068,#071833);*/
+    -fx-background-color: #204068;
+    -fx-background-image:  url("../images/backMAIN.jpg");
+    -fx-background-size: 850px;
+}
+.tab-pane.tab.text{
+    -fx-font-size: 20px;
+    -fx-font-family: Candara ;
+    -fx-alignment: center;
+    -fx-font-weight:bold;
+    -fx-text-fill: wheat;
+    -fx-background-color: #06181f;
+}
+.tab-pane{
+    -fx-background-color: transparent;
+}
+.tab *.tab-label {
+    -fx-rotate: 270;
+
+
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:50px;
+}
+
+.tab-pane .tab
+{
+    -fx-background-color: gray;
+    -fx-background-radius:  10px;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #3c3c3c;
+
+
+    -fx-background-radius:  20px;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: wheat;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab {
+
+    -fx-padding: 4em 0.1em 4em 0.1em;
+}
+.label{
+
+    -fx-font-family:Impact ;
+    -fx-alignment: center;
+    -fx-text-fill: wheat;
+}
+.button {
+    -fx-text-fill: wheat;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: gray;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:gray ;
+
+}
+.table-row-cell:filled:selected:default.text{
+    -fx-text-fill: wheat;
+}
+.table-row-cell:selected .text {
+    -fx-fill: #ffffff;
+
+
+}
+.table-row-cell:default.text{
+    -fx-text-fill: wheat;
+}
+
+.table-row-cell{
+    //-fx-font-size: 14;
+    -fx-background-color: #021a40;
+    -fx-text-fill: wheat;
+
+}
+
+
+.table-view{
+
+// -fx-background-color: #0e232b;
+    -fx-background-color:#021a40;
+
+
+}
+.table-cell {
+    -fx-text-fill:#dadebd gray;
+}
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #06181f;
+}
+
+
+.combo-box{
+    -fx-background-color: #071e33;
+    -fx-text-fill: wheat;
+}
+.combo-box.button{
+    -fx-background-color: #071e33;
+    -fx-text-fill: wheat;
+}
+.text-field{
+    -fx-background-color: #07193d;
+    -fx-font-size: 14px;
+    -fx-background-position: center;
+    -fx-font-family: Candara ;
+    -fx-alignment: center;
+    -fx-font-style: italic;
+    -fx-text-fill: wheat;
+}
+.tab2{
+
+    -fx-background-color:  #07193d;
+}
+.list-cell{
+
+    -fx-background-color: #07193d;
+
+    -fx-text-fill: wheat;
+}
+.titled-pane > .title {
+    -fx-background-color: #298FA1;
+
+    -fx-text-fill: wheat;
+}

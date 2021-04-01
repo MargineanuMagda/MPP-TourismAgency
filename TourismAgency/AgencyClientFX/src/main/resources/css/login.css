@@ -1,0 +1,60 @@
+.root{
+    -fx-background-image:  url("../images/backMAIN.jpg");
+    -fx-background-size: 703px;
+
+}
+.root.tab-header-background{
+    -fx-background-color: #0C1014;
+    -fx-text-fill: wheat;
+}
+.label{
+
+    -fx-font-family:Impact ;
+    -fx-alignment: center;
+    -fx-text-fill: wheat;
+}
+.button {
+    -fx-text-fill: wheat;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: gray;
+}
+
+.tab-pane.tab.text{
+    -fx-font-size: 20px;
+    -fx-font-family: Candara ;
+    -fx-alignment: center;
+    -fx-font-weight:bold;
+    -fx-text-fill: wheat;
+    -fx-background-color: #06181f;
+}
+
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #10062B;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+.tab-pane .tab
+{
+    -fx-background-color: gray;
+    -fx-background-radius:  5px;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #3c3c3c;
+
+    -fx-background-radius:  20px;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: wheat;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
