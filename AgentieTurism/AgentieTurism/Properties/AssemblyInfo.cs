@@ -34,3 +34,4 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: log4net.Config.XmlConfigurator(ConfigFile = "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\AgentieTurism\\log.config")]

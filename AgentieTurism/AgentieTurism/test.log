@@ -1,0 +1,496 @@
+﻿18 Mar 2021 00:45:10,441 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+18 Mar 2021 00:45:10,856 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+18 Mar 2021 00:45:10,857 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+18 Mar 2021 00:45:10,867 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+18 Mar 2021 00:45:10,871 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+18 Mar 2021 00:45:10,872 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+18 Mar 2021 00:45:10,883 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+18 Mar 2021 00:45:10,883 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+18 Mar 2021 00:45:10,884 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+18 Mar 2021 00:47:09,966 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+18 Mar 2021 00:47:10,233 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+18 Mar 2021 00:47:10,234 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+18 Mar 2021 00:47:10,242 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+18 Mar 2021 00:47:10,245 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+18 Mar 2021 00:47:10,246 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+18 Mar 2021 00:47:10,246 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+18 Mar 2021 00:47:10,247 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+18 Mar 2021 00:47:10,247 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+18 Mar 2021 12:41:13,264 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+18 Mar 2021 12:41:13,796 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+18 Mar 2021 12:41:13,797 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+18 Mar 2021 12:41:13,814 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+18 Mar 2021 12:41:13,818 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+18 Mar 2021 12:41:13,821 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+18 Mar 2021 12:41:13,822 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+18 Mar 2021 12:41:13,823 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+18 Mar 2021 12:41:13,830 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+18 Mar 2021 12:41:42,943 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+18 Mar 2021 12:41:43,190 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+18 Mar 2021 12:41:43,191 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+18 Mar 2021 12:41:43,198 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+18 Mar 2021 12:41:43,200 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+18 Mar 2021 12:41:43,200 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+18 Mar 2021 12:41:43,201 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+18 Mar 2021 12:41:43,202 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+18 Mar 2021 12:41:43,207 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+18 Mar 2021 13:05:15,511 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+18 Mar 2021 13:05:15,814 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+18 Mar 2021 13:05:15,815 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+18 Mar 2021 13:05:15,823 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+18 Mar 2021 13:05:15,826 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+18 Mar 2021 13:05:15,826 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+18 Mar 2021 13:05:15,827 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+18 Mar 2021 13:05:15,828 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+18 Mar 2021 13:05:15,829 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+19 Mar 2021 20:32:37,897 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+19 Mar 2021 20:32:38,373 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+19 Mar 2021 20:32:38,373 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+19 Mar 2021 20:32:38,381 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+19 Mar 2021 20:32:38,383 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+19 Mar 2021 20:32:38,383 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+19 Mar 2021 20:32:38,384 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+19 Mar 2021 20:32:38,385 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+19 Mar 2021 20:32:38,389 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+23 Mar 2021 16:54:18,824 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+23 Mar 2021 16:54:19,662 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+23 Mar 2021 16:54:19,663 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+23 Mar 2021 16:54:19,683 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+23 Mar 2021 16:54:19,685 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+23 Mar 2021 16:54:19,686 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+23 Mar 2021 16:54:19,687 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+23 Mar 2021 16:54:19,690 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+23 Mar 2021 16:54:19,700 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+23 Mar 2021 16:54:35,119 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+23 Mar 2021 16:54:35,412 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+23 Mar 2021 16:54:35,413 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+23 Mar 2021 16:54:35,423 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+23 Mar 2021 16:54:35,424 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+23 Mar 2021 16:54:35,425 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+23 Mar 2021 16:54:35,426 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+23 Mar 2021 16:54:35,427 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+23 Mar 2021 16:54:35,428 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+23 Mar 2021 16:56:17,250 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+23 Mar 2021 16:56:17,677 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+23 Mar 2021 16:56:17,679 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+23 Mar 2021 16:56:17,695 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+23 Mar 2021 16:56:17,697 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+23 Mar 2021 16:56:17,698 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+23 Mar 2021 16:56:17,700 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+23 Mar 2021 16:56:17,702 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+23 Mar 2021 16:56:17,704 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+24 Mar 2021 22:57:29,000 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+24 Mar 2021 22:57:29,797 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+24 Mar 2021 22:57:29,797 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+24 Mar 2021 22:57:29,809 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+24 Mar 2021 22:57:29,812 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+24 Mar 2021 22:57:29,812 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+24 Mar 2021 22:57:29,817 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+24 Mar 2021 22:57:29,817 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+24 Mar 2021 22:57:29,817 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+24 Mar 2021 22:57:38,087 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: a, password: aa
+24 Mar 2021 22:57:38,101 INFO  AgentieTurism.repository.AgentDBRepository 77 findAgentsByUser - Exiting findOne with value {0}
+24 Mar 2021 22:57:55,353 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+24 Mar 2021 22:57:55,353 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:28:24,778 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:28:25,055 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:28:25,056 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:28:25,063 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:28:25,064 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:28:25,065 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:28:25,066 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:28:25,067 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:28:25,068 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:28:38,345 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:28:38,347 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:29:02,166 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:29:02,167 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:31:01,327 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:31:01,596 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:31:01,597 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:31:01,605 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:31:01,606 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:31:01,607 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:31:01,608 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:31:01,608 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:31:01,610 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:31:14,995 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:31:14,998 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:32:46,452 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:32:46,800 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:32:46,801 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:32:46,811 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:32:46,813 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:32:46,814 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:32:46,815 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:32:46,816 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:32:46,817 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:32:58,174 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:32:58,176 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:33:35,293 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:33:35,294 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:38:22,514 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:38:22,799 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:38:22,800 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:38:22,807 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:38:22,810 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:38:22,810 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:38:22,811 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:38:22,812 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:38:22,813 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:40:18,832 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:40:19,099 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:40:19,101 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:40:19,108 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:40:19,110 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:40:19,110 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:40:19,111 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:40:19,112 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:40:19,115 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:41:05,342 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:41:05,580 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:41:05,581 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:41:05,588 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:41:05,589 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:41:05,590 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:41:05,591 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:41:05,591 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:41:05,592 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:41:18,595 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:41:18,597 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:43:14,472 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:43:14,730 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:43:14,731 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:43:14,738 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:43:14,739 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:43:14,740 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:43:14,741 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:43:14,742 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:43:14,743 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:43:44,088 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:43:44,090 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:52:13,733 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:52:14,016 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:52:14,017 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:52:14,023 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:52:14,026 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:52:14,026 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:52:14,026 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:52:14,028 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:52:14,028 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:52:25,077 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:52:25,080 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:53:18,529 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:53:18,781 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:53:18,782 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:53:18,788 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:53:18,790 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:53:18,790 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:53:18,791 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:53:18,792 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:53:18,793 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:53:30,375 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:53:30,377 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:54:18,592 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:54:18,853 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:54:18,854 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:54:18,862 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:54:18,863 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:54:18,863 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:54:18,864 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:54:18,865 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:54:18,866 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:54:28,435 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:54:28,437 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:55:36,047 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:55:36,303 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:55:36,304 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:55:36,311 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:55:36,312 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:55:36,313 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:55:36,314 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:55:36,314 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:55:36,315 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:55:46,889 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:55:46,891 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 00:58:02,430 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 00:58:02,727 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 00:58:02,727 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 00:58:02,736 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 00:58:02,737 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 00:58:02,738 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 00:58:02,739 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 00:58:02,739 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 00:58:02,740 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 00:58:14,718 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 00:58:14,720 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:02:15,002 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:02:15,270 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:02:15,271 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:02:15,278 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:02:15,281 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:02:15,281 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:02:15,282 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:02:15,283 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:02:15,285 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:02:26,403 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:02:26,405 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:09:02,063 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:09:02,333 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:09:02,334 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:09:02,341 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:09:02,342 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:09:02,342 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:09:02,343 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:09:02,344 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:09:02,345 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:09:14,363 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:09:14,365 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:09:18,052 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+25 Mar 2021 01:09:27,644 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: Buc, and hours between 0->23
+25 Mar 2021 01:09:48,750 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: Cluj, and hours between 0->23
+25 Mar 2021 01:09:51,278 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+25 Mar 2021 01:18:10,653 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:18:10,927 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:18:10,928 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:18:10,935 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:18:10,936 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:18:10,937 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:18:10,939 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:18:10,940 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:18:10,942 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:18:22,481 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:18:22,483 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:18:33,988 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: Ia, and hours between 0->23
+25 Mar 2021 01:19:56,530 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:19:56,803 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:19:56,804 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:19:56,811 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:19:56,813 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:19:56,813 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:19:56,814 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:19:56,817 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:19:56,818 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:20:16,537 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:20:16,539 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:20:20,639 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+25 Mar 2021 01:21:08,099 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:21:08,345 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:21:08,346 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:21:08,353 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:21:08,354 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:21:08,355 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:21:08,355 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:21:08,356 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:21:08,358 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:21:17,549 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:21:17,551 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:21:25,376 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: Ia, and hours between 0->23
+25 Mar 2021 01:22:09,131 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:22:09,375 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:22:09,376 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:22:09,383 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:22:09,384 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:22:09,384 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:22:09,385 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:22:09,387 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:22:09,390 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:22:18,744 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:22:18,748 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:22:22,108 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+25 Mar 2021 01:27:31,970 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:27:32,234 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:27:32,235 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:27:32,243 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:27:32,244 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:27:32,245 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:27:32,245 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:27:32,245 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:27:32,247 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:27:43,639 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:27:43,642 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:27:46,750 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+25 Mar 2021 01:40:41,577 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:40:41,857 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:40:41,858 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:40:41,865 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:40:41,866 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:40:41,867 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:40:41,867 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:40:41,868 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:40:41,869 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:40:52,298 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:40:52,301 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:40:59,966 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: Ia, and hours between 0->23
+25 Mar 2021 01:48:29,589 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:48:29,851 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:48:29,851 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:48:29,858 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:48:29,859 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:48:29,860 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:48:29,861 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:48:29,862 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:48:29,864 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:48:41,549 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:48:41,552 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:48:55,907 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->11
+25 Mar 2021 01:49:06,142 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->21
+25 Mar 2021 01:49:46,699 INFO  AgentieTurism.repository.TripDBRepository 250 update - Updating trip = ID trip: 3Place:Iasi Transport:ATrans Data:3/17/2021 7:44:00 PM Price:100 Tickets:25 Free Tickets: 23
+25 Mar 2021 01:49:46,720 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
+25 Mar 2021 01:49:46,726 INFO  AgentieTurism.repository.TripDBRepository 250 update - Updating trip = ID trip: 3Place:Iasi Transport:ATrans Data:3/17/2021 7:44:00 PM Price:100 Tickets:25 Free Tickets: 21
+25 Mar 2021 01:49:46,731 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
+25 Mar 2021 01:49:46,733 INFO  AgentieTurism.repository.ReservationDBRepository 217 save - Saving reservation = Id: 0Client Pop Ioan Telefon:0733 333 222Trip : Iasi Number of tickets: 2
+25 Mar 2021 01:49:46,739 INFO  AgentieTurism.repository.ReservationDBRepository 256 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Reservation was added succesfully}</format><args>{}</args></log4net.Error>
+25 Mar 2021 01:51:08,753 INFO  AgentieTurism.repository.TripDBRepository 250 update - Updating trip = ID trip: 1Place:Bucuresti Transport:ATrans Data:3/17/2021 7:57:09 PM Price:100 Tickets:25 Free Tickets: 20
+25 Mar 2021 01:51:08,766 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
+25 Mar 2021 01:51:08,772 INFO  AgentieTurism.repository.TripDBRepository 250 update - Updating trip = ID trip: 1Place:Bucuresti Transport:ATrans Data:3/17/2021 7:57:09 PM Price:100 Tickets:25 Free Tickets: 15
+25 Mar 2021 01:51:08,777 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
+25 Mar 2021 01:51:08,777 INFO  AgentieTurism.repository.ReservationDBRepository 217 save - Saving reservation = Id: 0Client Pop Ioan Telefon:0733 333 222Trip : Bucuresti Number of tickets: 5
+25 Mar 2021 01:51:08,781 INFO  AgentieTurism.repository.ReservationDBRepository 256 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Reservation was added succesfully}</format><args>{}</args></log4net.Error>
+25 Mar 2021 01:51:39,401 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->21
+25 Mar 2021 01:53:05,035 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:53:05,303 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:53:05,304 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:53:05,312 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:53:05,315 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:53:05,315 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:53:05,317 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:53:05,317 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:53:05,319 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:53:16,942 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:53:16,944 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:57:29,644 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:57:29,917 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:57:29,918 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:57:29,925 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:57:29,927 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:57:29,927 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:57:29,928 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:57:29,929 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:57:29,930 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:57:40,953 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:57:40,955 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 01:57:47,913 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+25 Mar 2021 01:58:20,302 INFO  AgentieTurism.repository.TripDBRepository 250 update - Updating trip = ID trip: 1Place:Bucuresti Transport:ATrans Data:3/17/2021 7:57:09 PM Price:100 Tickets:25 Free Tickets: 0
+25 Mar 2021 01:58:20,317 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
+25 Mar 2021 01:58:20,318 INFO  AgentieTurism.repository.ReservationDBRepository 217 save - Saving reservation = Id: 0Client Margineanu Maria Telefon:0700 000 000Trip : Bucuresti Number of tickets: 15
+25 Mar 2021 01:58:20,323 INFO  AgentieTurism.repository.ReservationDBRepository 256 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Reservation was added succesfully}</format><args>{}</args></log4net.Error>
+25 Mar 2021 01:59:42,377 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 01:59:42,660 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 01:59:42,661 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 01:59:42,672 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 01:59:42,674 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 01:59:42,675 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 01:59:42,676 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 01:59:42,676 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 01:59:42,678 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 01:59:58,280 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 01:59:58,282 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 02:01:17,581 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 02:01:17,854 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 02:01:17,855 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 02:01:17,864 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 02:01:17,865 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 02:01:17,865 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 02:01:17,866 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 25
+25 Mar 2021 02:01:17,867 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 02:01:17,868 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 02:01:33,340 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 02:01:33,342 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 02:01:41,196 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+25 Mar 2021 02:02:13,236 INFO  AgentieTurism.repository.TripDBRepository 250 update - Updating trip = ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 0
+25 Mar 2021 02:02:13,249 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
+25 Mar 2021 02:02:13,251 INFO  AgentieTurism.repository.ReservationDBRepository 217 save - Saving reservation = Id: 0Client Ana Pop Telefon:0740 486 771Trip : Iasi Number of tickets: 25
+25 Mar 2021 02:02:13,255 INFO  AgentieTurism.repository.ReservationDBRepository 256 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Reservation was added succesfully}</format><args>{}</args></log4net.Error>
+25 Mar 2021 02:02:51,889 INFO  AgentieTurism.repository.AgentDBRepository 139 save - Saving agent = Username: andra@travel Password: 1234567
+25 Mar 2021 02:02:51,902 INFO  AgentieTurism.repository.AgentDBRepository 166 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Agent was added succesfully}</format><args>{}</args></log4net.Error>
+25 Mar 2021 02:02:51,905 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: andra@travel, password: 1234567
+25 Mar 2021 02:02:51,906 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: andra@travel Password: 1234567
+25 Mar 2021 02:11:42,453 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 02:11:42,741 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 02:11:42,742 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 02:11:42,749 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 02:11:42,750 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 02:11:42,751 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 02:11:42,752 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 0
+25 Mar 2021 02:11:42,752 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 02:11:42,753 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 02:11:58,966 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: andra@travel, password: 1234567
+25 Mar 2021 02:11:58,968 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: andra@travel Password: 1234567
+25 Mar 2021 02:12:13,454 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+25 Mar 2021 02:12:56,773 INFO  AgentieTurism.repository.TripDBRepository 250 update - Updating trip = ID trip: 2Place:Cluj Transport:BTrans Data:3/17/2021 7:42:48 PM Price:120 Tickets:30 Free Tickets: 27
+25 Mar 2021 02:12:56,792 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
+25 Mar 2021 02:12:56,793 INFO  AgentieTurism.repository.ReservationDBRepository 217 save - Saving reservation = Id: 0Client AA Telefon:0730 220 220Trip : Cluj Number of tickets: 3
+25 Mar 2021 02:12:56,798 INFO  AgentieTurism.repository.ReservationDBRepository 256 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Reservation was added succesfully}</format><args>{}</args></log4net.Error>
+25 Mar 2021 02:14:41,159 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 02:14:41,441 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 02:14:41,442 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 02:14:41,449 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 02:14:41,450 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 02:14:41,451 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 02:14:41,452 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 0
+25 Mar 2021 02:14:41,453 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 02:14:41,454 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 02:16:14,411 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 02:16:14,671 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 02:16:14,672 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 02:16:14,679 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 02:16:14,681 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 02:16:14,683 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 02:16:14,685 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 0
+25 Mar 2021 02:16:14,686 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 02:16:14,688 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 02:16:28,879 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 02:16:28,882 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 02:17:13,541 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 02:17:13,816 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 02:17:13,817 INFO  AgentieTurism.repository.AgentDBRepository 176 update - Updating agent = Username: mihai@turism Password: 1234567
+25 Mar 2021 02:17:13,823 INFO  AgentieTurism.repository.AgentDBRepository 199 update - Agent was updated succesfully!
+25 Mar 2021 02:17:13,824 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 02:17:13,825 INFO  AgentieTurism.repository.TripDBRepository 71 findOne - Entering findOne with value 7
+25 Mar 2021 02:17:13,826 INFO  AgentieTurism.repository.TripDBRepository 97 findOne - Exiting findOne with value ID trip: 7Place:Iasi Transport:ATrans Data:3/17/2021 7:48:28 PM Price:100 Tickets:25 Free Tickets: 0
+25 Mar 2021 02:17:13,827 INFO  AgentieTurism.repository.ReservationDBRepository 78 findOne - Entering findOne with value 2
+25 Mar 2021 02:17:13,828 INFO  AgentieTurism.repository.ReservationDBRepository 112 findOne - Exiting findOne with value Id: 2Client Pop Andrei Telefon:0799 999 999Trip : Iasi Number of tickets: 4
+25 Mar 2021 02:17:24,351 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 02:17:24,353 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 02:17:28,187 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+25 Mar 2021 11:48:18,280 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 11:48:18,306 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 11:48:18,307 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 11:48:47,418 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 11:48:47,443 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 11:48:47,444 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 11:49:08,643 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 11:49:08,856 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 12:12:27,739 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 12:12:27,761 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 12:12:27,762 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 12:12:29,850 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: , password: 
+25 Mar 2021 12:12:30,099 INFO  AgentieTurism.repository.AgentDBRepository 77 findAgentsByUser - Exiting findOne with value {0}
+25 Mar 2021 12:13:12,694 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+25 Mar 2021 12:13:12,696 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+25 Mar 2021 12:15:38,427 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+25 Mar 2021 12:16:20,333 INFO  AgentieTurism.repository.TripDBRepository 250 update - Updating trip = ID trip: 9Place:Brasov Transport:EliTrans Data:6/26/2021 9:45:49 PM Price:400 Tickets:120 Free Tickets: 116
+25 Mar 2021 12:16:20,349 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
+25 Mar 2021 12:16:20,350 INFO  AgentieTurism.repository.ReservationDBRepository 217 save - Saving reservation = Id: 0Client Ioan Telefon:0712 122 222Trip : Brasov Number of tickets: 4
+25 Mar 2021 12:16:20,355 INFO  AgentieTurism.repository.ReservationDBRepository 256 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Reservation was added succesfully}</format><args>{}</args></log4net.Error>
+25 Mar 2021 12:17:01,832 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 12:17:01,849 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 12:17:01,849 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+25 Mar 2021 12:17:06,934 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: , password: 
+25 Mar 2021 12:17:07,168 INFO  AgentieTurism.repository.AgentDBRepository 77 findAgentsByUser - Exiting findOne with value {0}
+25 Mar 2021 12:17:32,922 INFO  AgentieTurism.repository.AgentDBRepository 139 save - Saving agent = Username: a@travel Password: 1234567
+25 Mar 2021 12:17:32,936 INFO  AgentieTurism.repository.AgentDBRepository 166 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Agent was added succesfully}</format><args>{}</args></log4net.Error>
+25 Mar 2021 12:17:32,938 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: a@travel, password: 1234567
+25 Mar 2021 12:17:32,939 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: a@travel Password: 1234567
+25 Mar 2021 12:17:48,592 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+25 Mar 2021 12:17:51,849 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: as, and hours between 0->23
+25 Mar 2021 12:18:14,914 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: as, and hours between 8->19
+25 Mar 2021 12:18:21,453 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 8->19
+25 Mar 2021 12:19:24,629 INFO  AgentieTurism.repository.TripDBRepository 250 update - Updating trip = ID trip: 2Place:Cluj Transport:BTrans Data:3/17/2021 7:42:48 PM Price:120 Tickets:30 Free Tickets: 0
+25 Mar 2021 12:19:24,645 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
+25 Mar 2021 12:19:24,646 INFO  AgentieTurism.repository.ReservationDBRepository 217 save - Saving reservation = Id: 0Client Andrei Telefon:0788 888 888Trip : Cluj Number of tickets: 27
+25 Mar 2021 12:19:24,651 INFO  AgentieTurism.repository.ReservationDBRepository 256 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Reservation was added succesfully}</format><args>{}</args></log4net.Error>
+25 Mar 2021 12:25:39,460 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+25 Mar 2021 12:25:39,474 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+25 Mar 2021 12:25:39,476 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository

@@ -35,3 +35,7 @@ D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\AgentieTurism\b
 D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\AgentieTurism\bin\Debug\System.Memory.xml
 D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\AgentieTurism\bin\Debug\System.Numerics.Vectors.xml
 D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\AgentieTurism\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\AgentieTurism\obj\Debug\AgentieTurism.Login.resources
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\AgentieTurism\obj\Debug\AgentieTurism.Properties.Resources.resources
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\AgentieTurism\obj\Debug\AgentieTurism.csproj.GenerateResource.cache
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\AgentieTurism\obj\Debug\AgentieTurism.App.resources
