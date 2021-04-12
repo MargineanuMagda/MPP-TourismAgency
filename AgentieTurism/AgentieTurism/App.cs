@@ -32,7 +32,9 @@ namespace AgentieTurism
             {            
                 if (Convert.ToInt32(Myrow.Cells[5].Value) ==0)
                 {
-                    Myrow.DefaultCellStyle.BackColor = Color.Red;
+                    /*Myrow.DefaultCellStyle.BackColor = Color.Red;*/
+                    Myrow.DefaultCellStyle.BackColor = Color.FromKnownColor(KnownColor.Red);
+                    Myrow.ReadOnly = true;
                 }
                 
             }

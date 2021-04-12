@@ -494,3 +494,41 @@
 25 Mar 2021 12:25:39,460 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
 25 Mar 2021 12:25:39,474 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
 25 Mar 2021 12:25:39,476 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+06 Apr 2021 15:19:44,949 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+06 Apr 2021 15:19:44,975 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+06 Apr 2021 15:19:44,976 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+06 Apr 2021 15:20:05,986 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magdalena@travel, password: 1234567
+06 Apr 2021 15:20:06,606 INFO  AgentieTurism.repository.AgentDBRepository 77 findAgentsByUser - Exiting findOne with value {0}
+06 Apr 2021 15:20:15,483 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magdalena@turism, password: 1234567
+06 Apr 2021 15:20:15,484 INFO  AgentieTurism.repository.AgentDBRepository 77 findAgentsByUser - Exiting findOne with value {0}
+06 Apr 2021 15:20:23,351 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+06 Apr 2021 15:20:23,356 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+06 Apr 2021 15:20:37,375 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: Ia, and hours between 0->23
+06 Apr 2021 15:26:36,973 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+06 Apr 2021 15:26:36,988 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+06 Apr 2021 15:26:36,990 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+06 Apr 2021 15:26:55,295 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@travel, password: 1234567
+06 Apr 2021 15:26:55,546 INFO  AgentieTurism.repository.AgentDBRepository 77 findAgentsByUser - Exiting findOne with value {0}
+06 Apr 2021 15:27:03,828 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+06 Apr 2021 15:27:03,830 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+08 Apr 2021 11:34:11,383 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+08 Apr 2021 11:34:11,407 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+08 Apr 2021 11:34:11,407 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+08 Apr 2021 11:34:29,921 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+08 Apr 2021 11:34:30,188 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+08 Apr 2021 11:34:36,786 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+08 Apr 2021 11:35:02,549 INFO  AgentieTurism.repository.TripDBRepository 250 update - Updating trip = ID trip: 4Place:Iasi Transport: Data:4/7/2021 4:29:17 PM Price:0 Tickets:10 Free Tickets: 0
+08 Apr 2021 11:35:02,557 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
+08 Apr 2021 11:35:02,559 INFO  AgentieTurism.repository.ReservationDBRepository 217 save - Saving reservation = Id: 0Client AA Telefon:12Trip : Iasi Number of tickets: 8
+08 Apr 2021 11:35:02,564 INFO  AgentieTurism.repository.ReservationDBRepository 256 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Reservation was added succesfully}</format><args>{}</args></log4net.Error>
+08 Apr 2021 11:37:25,701 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+08 Apr 2021 11:37:25,724 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+08 Apr 2021 11:37:25,725 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+08 Apr 2021 11:37:39,067 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@turism, password: 1234567
+08 Apr 2021 11:37:39,290 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: magda@turism Password: 1234567
+08 Apr 2021 11:37:54,889 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+08 Apr 2021 11:38:40,126 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+08 Apr 2021 11:38:56,236 INFO  AgentieTurism.repository.TripDBRepository 250 update - Updating trip = ID trip: 2Place:Cluj Transport:BTrans Data:3/17/2021 7:42:48 PM Price:120 Tickets:30 Free Tickets: 0
+08 Apr 2021 11:38:56,253 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
+08 Apr 2021 11:38:56,255 INFO  AgentieTurism.repository.ReservationDBRepository 217 save - Saving reservation = Id: 0Client Ioan Telefon:22Trip : Cluj Number of tickets: 5
+08 Apr 2021 11:38:56,262 INFO  AgentieTurism.repository.ReservationDBRepository 256 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Reservation was added succesfully}</format><args>{}</args></log4net.Error>

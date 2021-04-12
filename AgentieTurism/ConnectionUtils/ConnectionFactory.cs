@@ -6,15 +6,15 @@ namespace ConnectionUtils
 {
 	public abstract class ConnectionFactory
 	{
-		protected ConnectionFactory()
+		/*protected ConnectionFactory()
 		{
-		}
+		}*/
 
-		private static ConnectionFactory instance;
+		private static ConnectionFactory _instance;
 
 		public static ConnectionFactory getInstance()
 		{
-			if (instance == null)
+			if (_instance == null)
 			{
 
 				Assembly assem = Assembly.GetExecutingAssembly();
@@ -22,10 +22,10 @@ namespace ConnectionUtils
 				foreach (var type in types)
 				{
 					if (type.IsSubclassOf(typeof(ConnectionFactory)))
-						instance = (ConnectionFactory)Activator.CreateInstance(type);
+						_instance = (ConnectionFactory)Activator.CreateInstance(type);
 				}
 			}
-			return instance;
+			return _instance;
 		}
 
 		public abstract IDbConnection createConnection();

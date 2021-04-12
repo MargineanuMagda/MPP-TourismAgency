@@ -1,0 +1,6 @@
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\bin\Debug\model.dll
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\bin\Debug\model.pdb
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\obj\Debug\model.csprojAssemblyReference.cache
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\obj\Debug\model.csproj.CoreCompileInputs.cache
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\obj\Debug\model.dll
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\obj\Debug\model.pdb
