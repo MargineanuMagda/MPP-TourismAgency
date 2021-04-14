@@ -74,6 +74,8 @@ public class ReservationDTO implements Serializable {
                 "client='" + client + '\'' +
                 ", telefon='" + telefon + '\'' +
                 ", tripID=" + tripID +
+                ", place='" + place + '\'' +
+                ", avTickets=" + avTickets +
                 ", nrTick=" + nrTick +
                 '}';
     }

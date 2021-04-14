@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface IAgencyObserver {
 
-    void reservationAdded(List<Trip> tripsRefreshed) throws ServiceException;
+    void reservationAdded(Reservation newReservation) throws ServiceException;
 }

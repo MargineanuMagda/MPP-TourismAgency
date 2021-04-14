@@ -67,11 +67,11 @@ public class AgencyClientRpcReflectionWorker implements Runnable, IAgencyObserve
     }
 
     @Override
-    public void reservationAdded(List<Trip> tripList) throws ServiceException {
+    public void reservationAdded(Reservation reservation) throws ServiceException {
 
 
-        Iterable<TripDTO> dtoTrips = DTOUtils.getDTO(tripList);
-        Response resp=new Response.Builder().type(ResponseType.NEW_RESERVATION).data(dtoTrips).build();
+        ReservationDTO dtoRes = DTOUtils.getDTO(reservation);
+        Response resp=new Response.Builder().type(ResponseType.NEW_RESERVATION).data(dtoRes).build();
         System.out.println("Reservation received.Update!!");
         try {
             sendResponse(resp);

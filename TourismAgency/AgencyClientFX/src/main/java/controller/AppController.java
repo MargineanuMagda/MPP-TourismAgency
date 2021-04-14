@@ -59,16 +59,26 @@ public class AppController implements Initializable, IAgencyObserver {
     }
 
     @Override
-    public void reservationAdded(List<Trip> tripList) {
+    public void reservationAdded(Reservation reservation) {
         //initTable1();
         Platform.runLater(()->{
-            refreshTables(tripList);
+            refreshTables(reservation);
         });
 
     }
 
-    private void refreshTables(List<Trip> tripList) {
-        modelTrips.setAll(tripList);
+    private void refreshTables(Reservation reservation) {
+        modelTrips.forEach(x->{
+            System.out.println("Rezervarea mea are id: "+reservation.getTripId().getId()+" vs rezervare din model trip id: "+x.getId());
+            if(reservation.getTripId().getId().equals(x.getId())){
+                System.out.println("id egale");
+                x.setFreeTickets(x.getFreeTickets()-reservation.getNrTick());
+                System.out.println("update trip "+x);
+            }
+        });
+
+
+        /*modelTrips.setAll(tripList);
         place1Col.setCellValueFactory(new PropertyValueFactory<>("Place"));
         trans1Col.setCellValueFactory(new PropertyValueFactory<>("Transport"));
         price1Col.setCellValueFactory(new PropertyValueFactory<>("Price"));
@@ -86,8 +96,10 @@ public class AppController implements Initializable, IAgencyObserver {
                     setStyle("-fx-background-color:   red");
 
             }
-        });
+        });*/
+        tableTrip1.setItems(null);
         tableTrip1.setItems(modelTrips);
+        tableTrip1.refresh();
 
     }
 

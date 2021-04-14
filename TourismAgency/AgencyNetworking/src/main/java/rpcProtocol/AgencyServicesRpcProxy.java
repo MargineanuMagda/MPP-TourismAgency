@@ -191,12 +191,11 @@ public class AgencyServicesRpcProxy implements IAgencyService {
     private void handleUpdate(Response response){
 
 
-        Iterable<Trip> trips = DTOUtils.getFromDTO((Iterable<TripDTO>) response.data());
+        Reservation reservation = DTOUtils.getFromDTO((ReservationDTO) response.data());
 
-        System.out.println("Update; Lista e: ");
-        trips.forEach(System.out::println);
+        System.out.println("Update; Reservarea  e: "+reservation);
         try {
-                client.reservationAdded(StreamSupport.stream(trips.spliterator(), false).collect(Collectors.toList()));
+                client.reservationAdded(reservation);
             } catch (ServiceException e) {
                 e.printStackTrace();
             }

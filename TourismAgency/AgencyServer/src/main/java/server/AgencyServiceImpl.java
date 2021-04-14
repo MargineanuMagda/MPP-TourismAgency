@@ -88,11 +88,11 @@ public class AgencyServiceImpl implements IAgencyService {
         /*for( IAgencyObserver client: loggedClients.values()){
             client.reservationAdded(reservation);
         }*/
-        notifyUsersLoggedIn();
+        notifyUsersLoggedIn(reservation);
 
     }
 
-    private void notifyUsersLoggedIn() {
+    private void notifyUsersLoggedIn(Reservation reservation) {
         Iterable<String> friends= loggedClients.keySet();
         System.out.println("Logged "+friends);
 
@@ -103,9 +103,9 @@ public class AgencyServiceImpl implements IAgencyService {
                 executor.execute(() -> {
                     try {
                         System.out.println("Notifying [" + us+ "] a reservation has been added.");
-                        List<Trip> tripList = StreamSupport.stream(tripRepository.findAll().spliterator(), false).collect(Collectors.toList());
+                        //List<Trip> tripList = StreamSupport.stream(tripRepository.findAll().spliterator(), false).collect(Collectors.toList());
 
-                        client.reservationAdded(tripList);
+                        client.reservationAdded(reservation);
                     } catch (ServiceException e) {
                         System.err.println("Error notifying friend " + e);
                     }

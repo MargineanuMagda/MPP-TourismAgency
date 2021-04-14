@@ -45,7 +45,7 @@ public class AgencyClientObjectWorker implements Runnable, IAgencyObserver {
     }
 
     @Override
-    public void reservationAdded(List<Trip> list) {
+    public void reservationAdded(Reservation r) {
 
     }
 }
