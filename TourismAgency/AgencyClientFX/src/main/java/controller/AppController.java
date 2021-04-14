@@ -16,7 +16,10 @@ import services.IAgencyObserver;
 import services.IAgencyService;
 import services.ServiceException;
 
+import java.io.Serializable;
 import java.net.URL;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
@@ -25,7 +28,7 @@ import java.util.ResourceBundle;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-public class AppController implements Initializable, IAgencyObserver {
+public class AppController extends UnicastRemoteObject implements Initializable, IAgencyObserver, Serializable {
     private IAgencyService service;
     private TravelAgent user;
 
@@ -43,11 +46,13 @@ public class AppController implements Initializable, IAgencyObserver {
         initLabels();
     }
 
-    public AppController() {
+    public AppController() throws RemoteException {
+
         System.out.println("Constructor without params");
     }
 
-    public AppController(IAgencyService service) {
+    public AppController(IAgencyService service) throws RemoteException  {
+        super();
         this.service = service;
         System.out.println("Constructor with param server ");
     }
@@ -69,34 +74,15 @@ public class AppController implements Initializable, IAgencyObserver {
 
     private void refreshTables(Reservation reservation) {
         modelTrips.forEach(x->{
-            System.out.println("Rezervarea mea are id: "+reservation.getTripId().getId()+" vs rezervare din model trip id: "+x.getId());
+            //System.out.println("Rezervarea mea are id: "+reservation.getTripId().getId()+" vs rezervare din model trip id: "+x.getId());
             if(reservation.getTripId().getId().equals(x.getId())){
-                System.out.println("id egale");
+                //System.out.println("id egale");
                 x.setFreeTickets(x.getFreeTickets()-reservation.getNrTick());
-                System.out.println("update trip "+x);
+                //System.out.println("update trip "+x);
             }
         });
 
 
-        /*modelTrips.setAll(tripList);
-        place1Col.setCellValueFactory(new PropertyValueFactory<>("Place"));
-        trans1Col.setCellValueFactory(new PropertyValueFactory<>("Transport"));
-        price1Col.setCellValueFactory(new PropertyValueFactory<>("Price"));
-        date1Col.setCellValueFactory(new PropertyValueFactory<>("Date"));
-        tick1Col.setCellValueFactory(new PropertyValueFactory<>("NrTickets"));
-        freeTick1Col.setCellValueFactory(new PropertyValueFactory<>("FreeTickets"));
-
-        tableTrip1.setRowFactory(tv -> new TableRow<>() {
-            @Override
-            protected void updateItem(Trip item, boolean empty) {
-                super.updateItem(item, empty);
-                if (item == null || empty)
-                    setStyle("");
-                else if (item.getFreeTickets() == 0)
-                    setStyle("-fx-background-color:   red");
-
-            }
-        });*/
         tableTrip1.setItems(null);
         tableTrip1.setItems(modelTrips);
         tableTrip1.refresh();
