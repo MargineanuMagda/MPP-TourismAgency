@@ -34,3 +34,10 @@ D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\Server\bin\Debu
 D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\Server\obj\Debug\Server.csproj.CopyComplete
 D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\Server\obj\Debug\Server.exe
 D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\Server\obj\Debug\Server.pdb
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\Server\bin\Debug\protobuf_3.dll
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\Server\bin\Debug\protobuf_3.pdb
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\Server\bin\Debug\Google.Protobuf.pdb
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\Server\bin\Debug\Google.Protobuf.xml
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\Server\bin\Debug\System.Memory.xml
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\Server\bin\Debug\System.Numerics.Vectors.xml

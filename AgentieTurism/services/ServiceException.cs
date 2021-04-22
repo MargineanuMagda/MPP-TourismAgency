@@ -2,6 +2,7 @@
 
 namespace services
 {
+    [Serializable]
     public class ServiceException:Exception
     {
 

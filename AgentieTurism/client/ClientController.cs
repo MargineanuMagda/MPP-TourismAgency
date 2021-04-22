@@ -7,6 +7,7 @@ namespace client
 {
     public class ClientController : IAgencyObserver
     {
+        //MarshalByRefObject
         /*[field: NonSerializedAttribute()]*/
         public event EventHandler<AgencyUserEventArgs> updateEvent; //ctrl calls it when it has received an update
         private readonly IAgencyService server;

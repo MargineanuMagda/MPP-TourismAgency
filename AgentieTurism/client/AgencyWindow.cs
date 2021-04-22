@@ -101,32 +101,33 @@ namespace client
                 
             }
             table1.Refresh();
-            /*table1.CellFormatting +=
+            table1.CellFormatting +=
                 new System.Windows.Forms.DataGridViewCellFormattingEventHandler(
-                    this.dataGridView1_CellFormatting);*/
+                    this.dataGridView1_CellFormatting);
 
             var source2 = new BindingSource();
             source2.DataSource = _filteredTrips;
             table2.DataSource = source2;
         }
 
-        /*private void dataGridView1_CellFormatting(object sender,
+        private void dataGridView1_CellFormatting(object sender,
             System.Windows.Forms.DataGridViewCellFormattingEventArgs e)
         {
             //Console.WriteLine(table1.Columns[e.ColumnIndex].Name);
             // Set the background to red for negative values in the Balance column.
-            if (table1.Columns[e.ColumnIndex].Name.Equals("FreeTickets"))
+            if (e.ColumnIndex==5 && e.Value != null)
             {
-                Console.WriteLine(e.Value);
-                Int32 intValue;
-                if ((String)e.Value=="0")
+                
+                Int32 intValue=Convert.ToInt32(e.Value);
+                if (intValue==0)
                 {
-                    Console.WriteLine("DA");
-                    e.CellStyle.BackColor = Color.Red;
-                    e.CellStyle.SelectionBackColor = Color.DarkRed;
+                    
+                    table1.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Red;
+                    table1.Rows[e.RowIndex].DefaultCellStyle.ForeColor=Color.Black;
+                    //e.CellStyle.SelectionBackColor = Color.DarkRed;
                 }
             }
-        }*/
+        }
 
         private void searchBtn_Click(object sender, EventArgs e)
         {

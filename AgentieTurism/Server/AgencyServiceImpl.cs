@@ -10,6 +10,7 @@ namespace Server
 {
     class AgencyServiceImpl : IAgencyService
     {
+        //MarshalByRefObject
         private TripRepository tripRepository;
         private AgentRepository agentRepository;
         private ReservationRepository reservationRepository;
@@ -93,6 +94,12 @@ namespace Server
             
 
         }
+        /*
+        public override object InitializeLifetimeService()
+        {
+            return null;
+        }
+        */
     
     }
 }

@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,6 +63,10 @@
     <ProjectReference Include="..\persistence\persistence.csproj">
       <Project>{5af7ea6c-d8ea-44e2-8693-e0a2ce2438f8}</Project>
       <Name>persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\protobuf_3\protobuf_3.csproj">
+      <Project>{654c8868-30a9-4d3f-b000-09bf95824a4e}</Project>
+      <Name>protobuf_3</Name>
     </ProjectReference>
     <ProjectReference Include="..\services\services.csproj">
       <Project>{5713d283-9d89-4363-a68b-ad06fc9015c6}</Project>

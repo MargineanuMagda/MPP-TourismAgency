@@ -2,6 +2,7 @@
 
 namespace model.domain
 {
+    [Serializable]
     public class Trip :Entity<long>
     {
         

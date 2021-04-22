@@ -1,7 +1,11 @@
 ﻿
+using System;
+
 namespace model.domain
 {
-   public class Entity<Id>
+    
+   [Serializable]
+    public class Entity<Id>
     {
         
         public Id ID { get; set; }

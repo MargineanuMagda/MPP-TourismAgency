@@ -1,7 +1,10 @@
 ﻿
 
+using System;
+
 namespace model.domain
 {
+    [Serializable]
     public class TravelAgent :Entity<long>
     {
         public string Username { get; set; }

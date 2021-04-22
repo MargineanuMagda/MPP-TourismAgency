@@ -1,7 +1,10 @@
 ﻿
 
+using System;
+
 namespace model.domain
 {
+    [Serializable]
     public class Reservation:Entity<long>
     {
         public string Client { get; set; }
