@@ -17,13 +17,19 @@ import repository.RepoException;
 import services.IAgencyService;
 import services.ServiceException;
 
+import java.io.Serializable;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 
-public class LoginController {
+
+public class LoginController implements Serializable {
 
     private IAgencyService service;
     private AppController appCtrl;
     private TravelAgent ctrUser;
     Parent mainAppParent;
+
+
 
     public void setService(IAgencyService serv){
         this.service=serv;

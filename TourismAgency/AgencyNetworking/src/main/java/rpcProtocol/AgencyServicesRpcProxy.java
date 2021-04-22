@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
+import java.rmi.RemoteException;
 import java.time.LocalTime;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -196,7 +197,7 @@ public class AgencyServicesRpcProxy implements IAgencyService {
         System.out.println("Update; Reservarea  e: "+reservation);
         try {
                 client.reservationAdded(reservation);
-            } catch (ServiceException e) {
+            } catch (ServiceException | RemoteException e) {
                 e.printStackTrace();
             }
 

@@ -5,6 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import rpcProtocol.AgencyServicesRpcProxy;
 import services.IAgencyService;
 import java.io.IOException;
@@ -13,13 +15,13 @@ import java.util.Properties;
 public class ClientFX extends Application {
 
 
-    private static int defaultPort = 55555;
-    private static String defaultServer = "localhost";
+    /*private static int defaultPort = 55555;
+    private static String defaultServer = "localhost";*/
 
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        System.out.println("In start");
+        /*System.out.println("In start");
         Properties clientProps = new Properties();
 
         try {
@@ -42,7 +44,12 @@ public class ClientFX extends Application {
         System.out.println("Using server IP " + serverIP);
         System.out.println("Using server port " + serverPort);
 
-        IAgencyService server = new AgencyServicesRpcProxy(serverIP, serverPort);
+        IAgencyService server = new AgencyServicesRpcProxy(serverIP, serverPort);*/
+
+        //Spring
+        ApplicationContext factory = new ClassPathXmlApplicationContext("classpath:spring-client.xml");
+        IAgencyService server=(IAgencyService)factory.getBean("agencyService");
+        System.out.println("Obtained a reference to remote chat server");
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
         Parent root = loader.load();
@@ -72,5 +79,8 @@ public class ClientFX extends Application {
 
     }
 
+    public static void main(String[] args) {
+        launch(args);
+    }
 
 }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <util:properties id="jdbc.Props" location="classpath:server.properties"/>
+    <bean id="validatorAgent" class="domain.validators.AgentValidator"/>
+    <bean id="validatorTrip" class="domain.validators.TripValidator"/>
+    <bean id="validatorReservation" class="domain.validators.ReservationValidator"/>
+
+    <bean id="agentRepo" class="repository.database.AgentDbRepository">
+        <constructor-arg ref="jdbc.Props"/>
+        <constructor-arg ref="validatorAgent"/>
+    </bean>
+    <bean id="tripRepo" class="repository.database.TripDbRepository">
+        <constructor-arg ref="jdbc.Props"/>
+        <constructor-arg ref="validatorTrip"/>
+    </bean>
+    <bean id="reservationRepo" class="repository.database.ReservationDbRepository">
+        <constructor-arg ref="jdbc.Props"/>
+        <constructor-arg ref="validatorReservation"/>
+    </bean>
+
+
+    <bean id="agencyService" class="server.AgencyServiceImpl">
+        <constructor-arg ref="tripRepo"/>
+        <constructor-arg ref="agentRepo"/>
+        <constructor-arg ref="reservationRepo"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+
+        <property name="serviceName" value="Agency"/>
+        <property name="service" ref="agencyService"/>
+        <property name="serviceInterface" value="services.IAgencyService"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+
+
+
+</beans>

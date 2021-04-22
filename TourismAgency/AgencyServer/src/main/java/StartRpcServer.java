@@ -13,6 +13,7 @@ import repository.database.ReservationDbRepository;
 import repository.database.TripDbRepository;
 import server.AgencyServiceImpl;
 import services.IAgencyService;
+import services.ServiceException;
 import utils.AbstractServer;
 import utils.AgencyRpcConcurrentServer;
 import utils.ServerException;
@@ -20,11 +21,13 @@ import utils.ServerException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class StartRpcServer {
     private static int defaultPort=55555;
     public static void main(String[] args) {
         // UserRepository userRepo=new UserRepositoryMock();
-        Properties serverProps=new Properties();
+        /*Properties serverProps=new Properties();
         try {
             serverProps.load(StartRpcServer.class.getResourceAsStream("/server.properties"));
             System.out.println("Server properties set. ");
@@ -61,6 +64,16 @@ public class StartRpcServer {
             }catch(ServerException e){
                 System.err.println("Error stopping server "+e.getMessage());
             }
+        }*/
+
+        //Spring
+        ApplicationContext factory = new ClassPathXmlApplicationContext("classpath:spring-server.xml");
+        IAgencyService server=(IAgencyService)factory.getBean("agencyService");
+        try {
+            server.getAllTrips().forEach(System.out::println);
+        } catch (ServiceException e) {
+            e.printStackTrace();
         }
+        System.out.println("Waiting..");
     }
 }

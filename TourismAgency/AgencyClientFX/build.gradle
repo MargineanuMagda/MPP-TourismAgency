@@ -7,7 +7,7 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-mainClassName='StartProtobuffClient'
+mainClassName='ClientFX'
 
 repositories {
     mavenCentral()
@@ -19,6 +19,7 @@ dependencies {
     compile project(':AgencyDomain')
     compile project(':AgencyServices')
     compile project(':AgencyNetworking')
+    compile 'org.springframework:spring-context:5.0.4.RELEASE'
 
 
 }
