@@ -14,16 +14,17 @@ import repository.database.TripDbRepository;
 import server.AgencyServiceImpl;
 import services.IAgencyService;
 import utils.AbstractServer;
+import utils.AgencyProtobuffConcurrentServer;
 import utils.AgencyRpcConcurrentServer;
 import utils.ServerException;
 
 import java.io.IOException;
 import java.util.Properties;
 
-public class StartRpcServer {
+public class StartProtobuffServer {
     private static int defaultPort=55555;
     public static void main(String[] args) {
-        // UserRepository userRepo=new UserRepositoryMock();
+
         Properties serverProps=new Properties();
         try {
             serverProps.load(StartRpcServer.class.getResourceAsStream("/server.properties"));
@@ -50,17 +51,11 @@ public class StartRpcServer {
             System.err.println("Using default port "+defaultPort);
         }
         System.out.println("Starting server on port: "+chatServerPort);
-        AbstractServer server = new AgencyRpcConcurrentServer(chatServerPort, serverImplementation);
+        AbstractServer server = new AgencyProtobuffConcurrentServer(chatServerPort, serverImplementation);
         try {
             server.start();
         } catch (ServerException e) {
             System.err.println("Error starting the server" + e.getMessage());
-        }finally {
-            try {
-                server.stop();
-            }catch(ServerException e){
-                System.err.println("Error stopping server "+e.getMessage());
-            }
         }
     }
 }

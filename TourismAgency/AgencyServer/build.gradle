@@ -16,7 +16,6 @@ dependencies {
     compile project(':AgencyServices')
     compile project(':AgencyPersistance')
     compile project(':AgencyNetworking')
-    compile 'org.springframework:spring-context:5.0.4.RELEASE'
 }
 
 test {

@@ -12,7 +12,6 @@ import services.IAgencyObserver;
 import services.IAgencyService;
 import services.ServiceException;
 
-import java.rmi.RemoteException;
 import java.time.LocalTime;
 import java.util.List;
 import java.util.Map;
@@ -107,7 +106,7 @@ public class AgencyServiceImpl implements IAgencyService {
                         //List<Trip> tripList = StreamSupport.stream(tripRepository.findAll().spliterator(), false).collect(Collectors.toList());
 
                         client.reservationAdded(reservation);
-                    } catch (ServiceException | RemoteException e) {
+                    } catch (ServiceException e) {
                         System.err.println("Error notifying friend " + e);
                     }
                 });
