@@ -15,8 +15,8 @@ import java.util.Properties;
 public class ClientFX extends Application {
 
 
-    private static int defaultPort = 55555;
-    private static String defaultServer = "localhost";
+    /*private static int defaultPort = 55555;
+    private static String defaultServer = "localhost";*/
 
     @Override
     public void start(Stage primaryStage) throws Exception {
