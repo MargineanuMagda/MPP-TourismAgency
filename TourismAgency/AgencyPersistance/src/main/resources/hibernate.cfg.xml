@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <!-- Specifying Session Context -->
+    <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
+
+    <property name="connection.url">jdbc:mysql://localhost:3306/useriagentie?createDatabaseIfNotExist=true</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">mySQLtest</property>
+      <property name="hibernate.hbm2ddl.auto">update</property>
+
+      <property name="show_sql">true</property>
+      <property name="format_sql">true</property>
+
+    <!--<mapping class="domain.TravelAgent"/>
+    <mapping resource="TravelAgent.hbm.xml"/>-->
+
+    <mapping class="domain.Entity"/>
+    <mapping class="domain.TravelAgent"/>
+    <mapping class="domain.Trip"/>
+
+    <mapping resource="TravelAgent.hbm.xml"/>
+    <mapping resource="Trip.hbm.xml"/>
+
+
+    <!-- DB schema will be updated if needed -->
+    <!--  -->
+  </session-factory>
+</hibernate-configuration>

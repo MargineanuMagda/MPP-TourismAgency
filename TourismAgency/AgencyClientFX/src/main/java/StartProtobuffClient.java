@@ -5,20 +5,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import protobuffprotocol.AgencyProtoProxi;
 import rpcProtocol.AgencyServicesRpcProxy;
 import services.IAgencyService;
+
 import java.io.IOException;
 import java.util.Properties;
 
-public class ClientFX extends Application {
-
-
-    private static int defaultPort = 55555;
-    private static String defaultServer = "localhost";
+public class StartProtobuffClient extends Application {
+    private static int defaultPort=55555;
+    private static String defaultServer="localhost";
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-
         System.out.println("In start");
         Properties clientProps = new Properties();
 
@@ -42,16 +41,16 @@ public class ClientFX extends Application {
         System.out.println("Using server IP " + serverIP);
         System.out.println("Using server port " + serverPort);
 
-        IAgencyService server = new AgencyServicesRpcProxy(serverIP, serverPort);
+        IAgencyService server = new AgencyProtoProxi(serverIP, serverPort);
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
         Parent root = loader.load();
 
         System.out.println("aaa");
-       LoginController ctrl = loader.<LoginController>getController();
-       ctrl.setService(server);
+        LoginController ctrl = loader.<LoginController>getController();
+        ctrl.setService(server);
 
-       FXMLLoader cloader = new FXMLLoader(
+        FXMLLoader cloader = new FXMLLoader(
                 getClass().getClassLoader().getResource("menu.fxml"));
         Parent croot=cloader.load();
 
@@ -69,8 +68,5 @@ public class ClientFX extends Application {
         primaryStage.setScene(scene);
         primaryStage.setTitle("TravelPack");
         primaryStage.show();
-
     }
-
-
 }

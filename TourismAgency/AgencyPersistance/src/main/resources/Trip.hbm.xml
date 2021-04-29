@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="domain.Trip" table="trips"  >
+        <id name="id">
+            <column name="idTrip" sql-type="bigint" >
+            </column>
+            <generator class="increment"/>
+        </id>
+        <property name="place">
+            <column name="place" sql-type="varchar(50)" length="30" not-null="true"/>
+        </property>
+        <property name="transport">
+            <column name="transport" sql-type="varchar(50)" length="30" not-null="true"/>
+        </property>
+        <property name="date" >
+            <column name="dateTrip" sql-type="timestamp" not-null="true"/>
+        </property>
+        <property name="price">
+            <column name="price" sql-type="int" />
+        </property>
+        <property name="nrTickets" >
+            <column name="nrTickets" sql-type="int" not-null="true"/>
+        </property>
+        <property name="freeTickets">
+            <column name="freeTickets" sql-type="int" />
+        </property>
+
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,62 @@
+syntax="proto3";
+
+package agency.protocol;
+
+option java_package="protobuffprotocol";
+option java_outer_classname="AgencyProtobufs";
+
+message TravelAgent{
+  int64 userId=1;
+  string username=2;
+  string passwd=3;
+}
+
+message Reservation{
+  string client=1;
+  string telefon=2;
+  int64 tripID=3;
+  string place=4;
+  int32 avTickets=5;
+  int32 nrTick=6;
+}
+
+message Trip{
+  int64 tripId=1;
+  string place=2;
+  string transport=3;
+  string date=4;
+  double price=5;
+  int32 nrTickets=6;
+  int32 freeTickets=7;
+}
+
+message Filter{
+  string place=1;
+  int32 minHour=2;
+  int32 maxHour=3;
+}
+
+message AgencyRequest{
+  enum Type{Unknown=0;LOGIN=1; LOGOUT=2; GET_ALL_TRIPS=3; TRIPS_BY_NAME_HOUR=4;ADD_RESERVATION=5;ADD_USER=6;}
+
+  Type type=1;
+  oneof payload{
+    TravelAgent user =2;
+    Reservation reservation =3;
+    Filter filterTrips =4;
+  }
+}
+
+message AgencyResponse{
+  enum Type{
+      Unknown=0;OK=1; ERROR=2; GET_ALL_TRIPS=3;UPDATE=4;TRIPS_FILTERED=5; NEW_RESERVATION=6; USER_LOGGED_IN=7;USER_LOGGED_OUT=8;
+  }
+
+  Type type =1;
+
+  string Error =2;
+
+  TravelAgent user =3;
+  repeated Trip trips=4;
+  Reservation reservation =5;
+}

@@ -1,13 +1,35 @@
 package domain;
 
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Table;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
-public class Trip extends Entity<Long>{
+@javax.persistence.Entity
+@Table(name = "trips")
+public class Trip extends Entity{
+    @Basic
+    @Column(name = "place")
     private String place;
+    @Basic
+    @Column(name = "transport")
     private String transport;
+    @Basic
+    @Column(name = "dateTrip")
     private LocalDateTime date;
+
+    public Trip() {
+    }
+
+    @Basic
+    @Column(name = "price")
     private Double price;
+    @Basic
+    @Column(name = "nrTickets")
     private Integer nrTickets;
+    @Basic
+    @Column(name = "freeTickets")
     private Integer freeTickets;
 
     public Trip(String place, String transport, LocalDateTime date, Double price, Integer nrTickets, Integer freeTickets) {
@@ -49,6 +71,7 @@ public class Trip extends Entity<Long>{
     public LocalDateTime getDate() {
         return date;
     }
+    public LocalTime getDateTime(){return date.toLocalTime();}
 
     public void setDate(LocalDateTime date) {
         this.date = date;

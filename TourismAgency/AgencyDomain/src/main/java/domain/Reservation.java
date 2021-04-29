@@ -1,6 +1,6 @@
 package domain;
 
-public class Reservation extends Entity<Long>{
+public class Reservation extends Entity{
     private String client;
     private String telefon;
     private Trip trip;

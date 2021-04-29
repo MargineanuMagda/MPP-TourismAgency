@@ -3,11 +3,9 @@ package services;
 import domain.Reservation;
 import domain.Trip;
 
-import java.rmi.Remote;
-import java.rmi.RemoteException;
 import java.util.List;
 
-public interface IAgencyObserver  extends Remote {
+public interface IAgencyObserver {
 
-    void reservationAdded(Reservation newReservation) throws ServiceException, RemoteException;
+    void reservationAdded(Reservation newReservation) throws ServiceException;
 }

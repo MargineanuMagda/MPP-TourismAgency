@@ -1,6 +1,10 @@
 package domain;
 
-public class TravelAgent extends Entity<Long>{
+import javax.persistence.*;
+
+@javax.persistence.Entity
+@Table(name="users")
+public class TravelAgent extends Entity{
     private String username;
     private String passwd;
 
@@ -9,6 +13,11 @@ public class TravelAgent extends Entity<Long>{
         this.passwd = passwd;
     }
 
+    public TravelAgent() {
+    }
+
+    @Basic
+    @Column(name = "username")
     public String getUsername() {
         return username;
     }
@@ -16,7 +25,8 @@ public class TravelAgent extends Entity<Long>{
     public void setUsername(String username) {
         this.username = username;
     }
-
+    @Basic
+    @Column(name = "parola")
     public String getPasswd() {
         return passwd;
     }
@@ -24,6 +34,7 @@ public class TravelAgent extends Entity<Long>{
     public void setPasswd(String passwd) {
         this.passwd = passwd;
     }
+
 
     @Override
     public String toString() {

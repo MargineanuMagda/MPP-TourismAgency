@@ -17,19 +17,13 @@ import repository.RepoException;
 import services.IAgencyService;
 import services.ServiceException;
 
-import java.io.Serializable;
-import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
 
-
-public class LoginController implements Serializable {
+public class LoginController {
 
     private IAgencyService service;
     private AppController appCtrl;
     private TravelAgent ctrUser;
     Parent mainAppParent;
-
-
 
     public void setService(IAgencyService serv){
         this.service=serv;
@@ -104,6 +98,7 @@ public class LoginController implements Serializable {
         }
         else{
             TravelAgent newUser= new TravelAgent(user,pass1);
+            newUser.setId(0L);
             try {
                 service.addUser(newUser);
                 ctrUser=newUser;
