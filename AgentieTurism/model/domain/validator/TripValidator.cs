@@ -14,7 +14,7 @@ namespace model.domain.validator
 
             if (entity.Price < 0)
                 throw new ValidException("Price should not be negative!\n");
-            if (entity.Tickets <= 0)
+            if (entity.NrTickets <= 0)
                 throw new ValidException("Number of tickets should be a positive integer!\n");
         }
     }

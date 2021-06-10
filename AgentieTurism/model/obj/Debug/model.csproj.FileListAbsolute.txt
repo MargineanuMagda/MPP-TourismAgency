@@ -4,3 +4,6 @@ D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\obj\Debug
 D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\obj\Debug\model.csproj.CoreCompileInputs.cache
 D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\obj\Debug\model.dll
 D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\obj\Debug\model.pdb
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\bin\Debug\Newtonsoft.Json.dll
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\bin\Debug\Newtonsoft.Json.xml
+D:\Facultate\AN2SEM2\MPP\Laborator\AgentieTurismC#\AgentieTurism\model\obj\Debug\model.csproj.CopyComplete

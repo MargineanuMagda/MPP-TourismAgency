@@ -160,7 +160,7 @@ namespace client
                 placeInfo.Text = t.Place;
                 transInfo.Text = t.Transport;
                 priceInfo.Text = t.Price.ToString();
-                dateInfo.Text = t.Data.ToString();
+                dateInfo.Text = t.Date.ToString();
                 TripName.Text = t.ToString();
                 tabControl1.SelectedIndex = 2;
             }

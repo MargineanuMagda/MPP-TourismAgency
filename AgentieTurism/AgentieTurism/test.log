@@ -532,3 +532,14 @@
 08 Apr 2021 11:38:56,253 INFO  AgentieTurism.repository.TripDBRepository 294 update - Trip was updated succesfully
 08 Apr 2021 11:38:56,255 INFO  AgentieTurism.repository.ReservationDBRepository 217 save - Saving reservation = Id: 0Client Ioan Telefon:22Trip : Cluj Number of tickets: 5
 08 Apr 2021 11:38:56,262 INFO  AgentieTurism.repository.ReservationDBRepository 256 save - <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>Reservation was added succesfully}</format><args>{}</args></log4net.Error>
+10 Jun 2021 16:00:55,172 INFO  AgentieTurism.repository.TripDBRepository 16 .ctor - Creating Trip DB Repository
+10 Jun 2021 16:00:55,200 INFO  AgentieTurism.repository.AgentDBRepository 19 .ctor - Creating AgentDBRepository
+10 Jun 2021 16:00:55,201 INFO  AgentieTurism.repository.ReservationDBRepository 15 .ctor - Creating Reservation DB Repository
+10 Jun 2021 16:01:12,937 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magdalena@travel, password: 1234567
+10 Jun 2021 16:01:13,403 INFO  AgentieTurism.repository.AgentDBRepository 77 findAgentsByUser - Exiting findOne with value {0}
+10 Jun 2021 16:01:28,504 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: magda@tourism, password: 1234567
+10 Jun 2021 16:01:28,505 INFO  AgentieTurism.repository.AgentDBRepository 77 findAgentsByUser - Exiting findOne with value {0}
+10 Jun 2021 16:01:41,449 INFO  AgentieTurism.repository.AgentDBRepository 47 findAgentsByUser - Entering findOne with username: larisa@travel, password: 1234567
+10 Jun 2021 16:01:41,453 INFO  AgentieTurism.repository.AgentDBRepository 72 findAgentsByUser - Exiting findOne with value Username: larisa@travel Password: 1234567
+10 Jun 2021 16:02:08,817 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: , and hours between 0->23
+10 Jun 2021 16:02:14,271 INFO  AgentieTurism.repository.TripDBRepository 151 findTripsByNameAndHours - Finding trips with name like: Buc, and hours between 0->23

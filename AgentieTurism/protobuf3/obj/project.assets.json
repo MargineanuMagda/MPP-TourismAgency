@@ -1,0 +1,224 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Google.Protobuf/3.16.0-rc1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {}
+        }
+      },
+      "ConnectionUtils/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ConnectionUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConnectionUtils.dll": {}
+        }
+      },
+      "model/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/model.dll": {}
+        }
+      },
+      "networking/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "model": "1.0.0",
+          "services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/networking.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/networking.dll": {}
+        }
+      },
+      "persistence/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "ConnectionUtils": "1.0.0",
+          "model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/persistence.dll": {}
+        }
+      },
+      "Server/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "model": "1.0.0",
+          "networking": "1.0.0",
+          "persistence": "1.0.0",
+          "services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Server.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Server.dll": {}
+        }
+      },
+      "services/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "model": "1.0.0",
+          "persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Google.Protobuf/3.16.0-rc1": {
+      "sha512": "z6Mm0ooacHU6pSDWB/QWs2AMazLxjHbpGmTG3yFTa3ArLdubz4aRxd4lVUB/2ZC4t1wx5GXSn7gufl8mpdfAng==",
+      "type": "package",
+      "path": "google.protobuf/3.16.0-rc1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.16.0-rc1.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/net5.0/Google.Protobuf.dll",
+        "lib/net5.0/Google.Protobuf.pdb",
+        "lib/net5.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
+    "ConnectionUtils/1.0.0": {
+      "type": "project",
+      "path": "../ConnectionUtils/ConnectionUtils.csproj",
+      "msbuildProject": "../ConnectionUtils/ConnectionUtils.csproj"
+    },
+    "model/1.0.0": {
+      "type": "project",
+      "path": "../model/model.csproj",
+      "msbuildProject": "../model/model.csproj"
+    },
+    "networking/1.0.0": {
+      "type": "project",
+      "path": "../networking/networking.csproj",
+      "msbuildProject": "../networking/networking.csproj"
+    },
+    "persistence/1.0.0": {
+      "type": "project",
+      "path": "../persistence/persistence.csproj",
+      "msbuildProject": "../persistence/persistence.csproj"
+    },
+    "Server/1.0.0": {
+      "type": "project",
+      "path": "../Server/Server.csproj",
+      "msbuildProject": "../Server/Server.csproj"
+    },
+    "services/1.0.0": {
+      "type": "project",
+      "path": "../services/services.csproj",
+      "msbuildProject": "../services/services.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Google.Protobuf >= 3.16.0-rc1",
+      "Server >= 1.0.0",
+      "model >= 1.0.0",
+      "services >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\3M\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\protobuf3\\protobuf3.csproj",
+      "projectName": "protobuf3",
+      "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\protobuf3\\protobuf3.csproj",
+      "packagesPath": "C:\\Users\\3M\\.nuget\\packages\\",
+      "outputPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\protobuf3\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\3M\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj": {
+              "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj"
+            },
+            "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\Server\\Server.csproj": {
+              "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\Server\\Server.csproj"
+            },
+            "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\services\\services.csproj": {
+              "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\services\\services.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Google.Protobuf": {
+            "target": "Package",
+            "version": "[3.16.0-rc1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

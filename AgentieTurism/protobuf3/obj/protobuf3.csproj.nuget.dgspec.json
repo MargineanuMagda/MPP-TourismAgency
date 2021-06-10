@@ -1,0 +1,192 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\protobuf3\\protobuf3.csproj": {}
+  },
+  "projects": {
+    "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\ConnectionUtils\\ConnectionUtils.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\ConnectionUtils\\ConnectionUtils.csproj",
+        "projectName": "ConnectionUtils",
+        "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\ConnectionUtils\\ConnectionUtils.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj",
+        "projectName": "model",
+        "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\networking\\networking.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\networking\\networking.csproj",
+        "projectName": "networking",
+        "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\networking\\networking.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj"
+              },
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\services\\services.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\services\\services.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\persistence\\persistence.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\persistence\\persistence.csproj",
+        "projectName": "persistence",
+        "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\persistence\\persistence.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\ConnectionUtils\\ConnectionUtils.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\ConnectionUtils\\ConnectionUtils.csproj"
+              },
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\protobuf3\\protobuf3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\protobuf3\\protobuf3.csproj",
+        "projectName": "protobuf3",
+        "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\protobuf3\\protobuf3.csproj",
+        "packagesPath": "C:\\Users\\3M\\.nuget\\packages\\",
+        "outputPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\protobuf3\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\3M\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj"
+              },
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\Server\\Server.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\Server\\Server.csproj"
+              },
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\services\\services.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\services\\services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.16.0-rc1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\Server\\Server.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\Server\\Server.csproj",
+        "projectName": "Server",
+        "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\Server\\Server.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj"
+              },
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\networking\\networking.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\networking\\networking.csproj"
+              },
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\persistence\\persistence.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\persistence\\persistence.csproj"
+              },
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\services\\services.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\services\\services.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\services\\services.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\services\\services.csproj",
+        "projectName": "services",
+        "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\services\\services.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\model\\model.csproj"
+              },
+              "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\persistence\\persistence.csproj": {
+                "projectPath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\persistence\\persistence.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

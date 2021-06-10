@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "networking", "networking\ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "protobuf_3", "protobuf_3\protobuf_3.csproj", "{654C8868-30A9-4D3F-B000-09BF95824A4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clientRest", "clientRest\clientRest.csproj", "{56C95442-3DFA-4D24-BF08-700618255F2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{654C8868-30A9-4D3F-B000-09BF95824A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{654C8868-30A9-4D3F-B000-09BF95824A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{654C8868-30A9-4D3F-B000-09BF95824A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C95442-3DFA-4D24-BF08-700618255F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C95442-3DFA-4D24-BF08-700618255F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C95442-3DFA-4D24-BF08-700618255F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C95442-3DFA-4D24-BF08-700618255F2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

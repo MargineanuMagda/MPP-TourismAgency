@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CdH4JkehHpgWnGThFOnmNpKIQCrgI/L4GTuFmRVbKcX3PVg3CUzxAbkSmHEnkiZrvNB3pMosfw8KVX9JC/TrHg==",
+  "success": true,
+  "projectFilePath": "D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurismC#\\AgentieTurism\\protobuf3\\protobuf3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\3M\\.nuget\\packages\\google.protobuf\\3.16.0-rc1\\google.protobuf.3.16.0-rc1.nupkg.sha512"
+  ],
+  "logs": []
+}

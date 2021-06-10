@@ -216,7 +216,7 @@ namespace persistence
 
                 var param4 = comm.CreateParameter();
                 param4.ParameterName = "@tick";
-                param4.Value = entity.Tickets;
+                param4.Value = entity.NrTickets;
                 comm.Parameters.Add(param4);
 
                 var param5 = comm.CreateParameter();
@@ -226,7 +226,7 @@ namespace persistence
 
                 var param6 = comm.CreateParameter();
                 param6.ParameterName = "@data";
-                param6.Value = entity.Data;
+                param6.Value = entity.Date;
                 comm.Parameters.Add(param6);
 
                 using (var dataR = comm.ExecuteReader())
@@ -273,7 +273,7 @@ namespace persistence
 
                 var param4 = comm.CreateParameter();
                 param4.ParameterName = "@tick";
-                param4.Value = entity.Tickets;
+                param4.Value = entity.NrTickets;
                 comm.Parameters.Add(param4);
 
                 var param5 = comm.CreateParameter();
@@ -283,7 +283,7 @@ namespace persistence
 
                 var param6 = comm.CreateParameter();
                 param6.ParameterName = "@data";
-                param6.Value = entity.Data;
+                param6.Value = entity.Date;
                 comm.Parameters.Add(param6);
 
                 var dataR = comm.ExecuteNonQuery();

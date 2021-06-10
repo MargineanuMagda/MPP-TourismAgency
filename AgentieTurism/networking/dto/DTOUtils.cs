@@ -41,9 +41,9 @@ namespace networking.dto
             long tripId = trip.ID;
             String place = trip.Place;
             String transport = trip.Transport;
-            DateTime date = trip.Data;
+            DateTime date = trip.Date;
             Double price = trip.Price;
-            int nrTickets = trip.Tickets;
+            int nrTickets = trip.NrTickets;
             int freeTickets = trip.FreeTickets;
             return new TripDTO(tripId, place, transport, date, price, nrTickets, freeTickets);
         }
