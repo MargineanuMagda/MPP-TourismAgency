@@ -1,13 +1,17 @@
 package repository.database;
 
 import domain.Trip;
+import domain.validators.TripValidator;
 import domain.validators.ValidationException;
 import domain.validators.Validator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Component;
 import repository.RepoException;
 import repository.TripRepository;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -16,12 +20,27 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+@Component
 public class TripDbRepository implements TripRepository {
 
     private JdbcUtils dbUtils;
     private Validator<Trip> tripValidator;
 
     private static final Logger logger= LogManager.getLogger();
+
+    public TripDbRepository() {
+
+        tripValidator=new TripValidator();
+        Properties properties=new Properties();
+        try {
+            properties.load(new FileInputStream("D:\\Facultate\\AN2SEM2\\MPP\\Laborator\\AgentieTurism\\TourismAgency\\AgencyServer\\src\\main\\resources\\server.properties"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("-----------------------------------");
+        System.out.println(properties.getProperty("agency.jdbc.url"));
+        dbUtils = new JdbcUtils(properties);
+    }
 
     public TripDbRepository(Properties props, Validator<Trip> tripValidator){
         this.tripValidator = tripValidator;
@@ -92,6 +111,9 @@ public class TripDbRepository implements TripRepository {
     public Trip save(Trip entity) throws ValidationException, RepoException {
 
         tripValidator.validate(entity);
+        if(entity.getId()==null){
+            entity.setId(0l);
+        }
         if (findOne(entity.getId()) != null) {
             return entity;
         } else{
@@ -106,12 +128,17 @@ public class TripDbRepository implements TripRepository {
                 preStmt.setDouble(4,entity.getPrice());
                 preStmt.setInt(5,entity.getNrTickets());
                 preStmt.setInt(6,entity.getFreeTickets());
+                System.out.println("aaa");
                 try(ResultSet result=preStmt.executeQuery()) {
                     if (result.next()) {
                         long id = result.getLong("idt");
+                        System.out.println("ULTIMUL ID INTRODUS: "+id);
                         entity.setId(id);
 
                     }}
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }catch (SQLException ex){
                 logger.error(ex);
                 System.out.println("Error DB "+ex);
@@ -147,6 +174,7 @@ public class TripDbRepository implements TripRepository {
             return entity;
         } else{
             logger.traceEntry("updating trip {} ",entity);
+            System.out.println("updating trip {} "+entity);
             Connection con=dbUtils.getConnection();
             try(PreparedStatement preStmt=con.prepareStatement("update trip set place=?,freetickets=? where idt=?")){
                 //preStmt.setDouble(1,entity.getId());

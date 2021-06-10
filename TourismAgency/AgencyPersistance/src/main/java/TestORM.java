@@ -23,8 +23,17 @@ public class TestORM {
         initialize();
         AgentRepository repoUser = new AgentHibernateDbImpl(new AgentValidator());
 
-        TravelAgent agent = new TravelAgent("maria@travel","1234567");
+        TravelAgent agent = new TravelAgent("iulian@travel","1234567");
         agent.setId(0l);
+        try {
+            repoUser.save(agent);
+            System.out.println("ID GENERAT: "+agent.getId());
+        } catch (ValidationException e) {
+            e.printStackTrace();
+        } catch (RepoException e) {
+            e.printStackTrace();
+        }
+
         /*try {
             repoUser.save(agent);
             System.out.println("User adaugat: "+agent);
@@ -40,11 +49,11 @@ public class TestORM {
             System.out.println("User gasit: "+repoUser.findOne(2L));
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
-
+        }
+*/
         //REPO TRIP
         TripRepository tripRepository = new TripHibernateDBImpl(new TripValidator());
-        Trip trip = new Trip("Cluj","ToraTrans", LocalDateTime.of(2020,7,24,8,0),400d,20,17);
+        Trip trip = new Trip("Bucuresti","EliTrans", LocalDateTime.of(2020,7,28,10,0),400d,100,15);
         trip.setId(3L);
         try {
             tripRepository.update(trip);

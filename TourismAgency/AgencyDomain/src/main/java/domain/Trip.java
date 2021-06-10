@@ -1,5 +1,7 @@
 package domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Table;
@@ -17,6 +19,7 @@ public class Trip extends Entity{
     private String transport;
     @Basic
     @Column(name = "dateTrip")
+
     private LocalDateTime date;
 
     public Trip() {
@@ -68,10 +71,11 @@ public class Trip extends Entity{
         this.transport = transport;
     }
 
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm",shape = JsonFormat.Shape.STRING)
     public LocalDateTime getDate() {
         return date;
     }
-    public LocalTime getDateTime(){return date.toLocalTime();}
 
     public void setDate(LocalDateTime date) {
         this.date = date;
@@ -89,9 +93,6 @@ public class Trip extends Entity{
         return nrTickets;
     }
 
-    public void setNrTickets(Integer nrTickets) {
-        this.nrTickets = nrTickets;
-    }
 
     public Integer getFreeTickets() {
         return freeTickets;

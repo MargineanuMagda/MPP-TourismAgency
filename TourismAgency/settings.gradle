@@ -6,4 +6,5 @@ include 'AgencyClient'
 include 'AgencyNetworking'
 include 'AgencyClientFX'
 include 'AgencyServer'
+include 'AgencyRestServices'
 

@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/TourismAgency/AgencyDomain" />
             <option value="$PROJECT_DIR$/TourismAgency/AgencyNetworking" />
             <option value="$PROJECT_DIR$/TourismAgency/AgencyPersistance" />
+            <option value="$PROJECT_DIR$/TourismAgency/AgencyRestServices" />
             <option value="$PROJECT_DIR$/TourismAgency/AgencyServer" />
             <option value="$PROJECT_DIR$/TourismAgency/AgencyServices" />
           </set>
